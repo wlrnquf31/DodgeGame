@@ -16,6 +16,18 @@ public class PlayerMove : MonoBehaviour
         {
             transform.Translate(new Vector3(0f, Input.GetAxisRaw("Vertical") * Speed * Time.deltaTime, 0f));
         }
+        
+        //if(Input.GetKeyDown(KeyCode.Escape))
+        //{
+        //    GameManager.instance.setScore(GameManager.instance.score + 100);
+        //}
 
+        if(Input.GetKeyDown(KeyCode.Escape))
+        {
+            GameManager.instance.GameStop();
+        }
+        
+
+        
     }
 }
