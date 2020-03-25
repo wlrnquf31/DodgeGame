@@ -16,18 +16,19 @@ public class PlayerMove : MonoBehaviour
         {
             transform.Translate(new Vector3(0f, Input.GetAxisRaw("Vertical") * Speed * Time.deltaTime, 0f));
         }
-        
-        //if(Input.GetKeyDown(KeyCode.Escape))
-        //{
-        //    GameManager.instance.setScore(GameManager.instance.score + 100);
-        //}
 
         if(Input.GetKeyDown(KeyCode.Escape))
         {
             GameManager.instance.GameStop();
         }
-        
 
-        
+        Vector3 pos = Camera.main.WorldToViewportPoint(transform.position);
+
+        if (pos.x < 0.03f) pos.x = 0.03f;
+        if (pos.x > 0.97f) pos.x = 0.97f;
+        if (pos.y < 0.03f) pos.y = 0.03f;
+        if (pos.y > 0.97f) pos.y = 0.97f;
+
+        transform.position = Camera.main.ViewportToWorldPoint(pos);
     }
 }
