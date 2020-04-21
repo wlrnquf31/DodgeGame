@@ -17,20 +17,14 @@ public class GameManager : MonoBehaviour
 
     public static GameManager instance = null;
 
+    public UiManager uiManager;
+
     public GameState currentGameState;
 
     public int score;
 
     public int hp;
-    private const int MAX_HP = 2;
-
-    public ScoreTextManager scoreTextManager;
-
-    public GameObject hpMenu;
-
-    public GameObject stopMenu;
-
-    public GameObject overMenu;
+    public const int MAX_HP = 2;
 
     private bool isStop = false;
 
@@ -53,11 +47,10 @@ public class GameManager : MonoBehaviour
     {
         currentGameState = gameState;
     }
-
     public void AddScore(int addScore)
     {
         score += addScore;
-        scoreTextManager.setScoreText(score);
+        uiManager.setScoreText(score);
     }
 
     public void AddHp(int addHp)
@@ -72,25 +65,7 @@ public class GameManager : MonoBehaviour
         {
             hp = MAX_HP;
         }
-        HpUiController();
-    }
-
-    private void HpUiController()
-    {
-        if (hpMenu != null)
-        {
-            for (int i = 0; i < MAX_HP; i++)
-            {
-                if (i <= hp - 1)
-                {
-                    hpMenu.transform.GetChild(i).gameObject.SetActive(true);
-                }
-                else
-                {
-                    hpMenu.transform.GetChild(i).gameObject.SetActive(false);
-                }
-            }
-        } 
+        uiManager.HpUiController();
     }
 
     public void GameStart()
@@ -115,14 +90,13 @@ public class GameManager : MonoBehaviour
 
         isStop = !isStop;
 
-        stopMenu.SetActive(!stopMenu.activeInHierarchy);
+        uiManager.stopUiController(isStop);
     }
 
     public void GameOver()
     {
-        overMenu.SetActive(true);
         Time.timeScale = 0;
-        overMenu.transform.GetChild(1).GetChild(1).GetComponent<Text>().text = "Score : " + score;
+        uiManager.overUiController();
     }
 
     public void BackToMain()

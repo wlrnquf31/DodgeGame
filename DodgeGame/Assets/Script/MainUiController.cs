@@ -7,7 +7,6 @@ public class MainUiController : MonoBehaviour
 {
     public void startBtn()
     {
-        Debug.Log("?");
         SceneManager.LoadScene("GameScene");
     }
 }
