@@ -3,10 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class MainUiController : MonoBehaviour
+public class StartUiController : MonoBehaviour
 {
-    public void startBtn()
+    public void StartBtn()
     {
         SceneManager.LoadScene("GameScene");
+    }
+
+    public void OptionSetting()
+    {
+
     }
 }

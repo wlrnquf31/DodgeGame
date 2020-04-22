@@ -4,13 +4,13 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public enum GameState
-{
-    main,
-    inGame,
-    gameStop,
-    gameOver
-}
+//public enum GameState
+//{
+//    main,
+//    inGame,
+//    gameStop,
+//    gameOver
+//}
 
 public class GameManager : MonoBehaviour
 {
@@ -19,12 +19,12 @@ public class GameManager : MonoBehaviour
 
     public UiManager uiManager;
 
-    public GameState currentGameState;
+    public Player player;
+
+    //public GameState currentGameState;
 
     public int score;
-
-    public int hp;
-    public const int MAX_HP = 2;
+    private readonly int ADD_SCORE = 100;
 
     private bool isStop = false;
 
@@ -38,42 +38,36 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
-        currentGameState = GameState.main;
+        //currentGameState = GameState.main;
+        Time.timeScale = 1;
+        player.Hp = 2;
         score = 0;
-        hp = 2;
     }
 
-    public void SetGameState(GameState gameState)
+    //public void SetGameState(GameState gameState)
+    //{
+    //    currentGameState = gameState;
+    //}
+
+    public void ShieldHit()
     {
-        currentGameState = gameState;
-    }
-    public void AddScore(int addScore)
-    {
-        score += addScore;
-        uiManager.setScoreText(score);
+        score += ADD_SCORE;
+        uiManager.SetScoreText(score);
     }
 
-    public void AddHp(int addHp)
+    public void PlayerHit()
     {
-        hp += addHp;
-
-        if(hp < 1)
+        player.Hp -= 1;
+        uiManager.HpUiController();
+        if (player.Hp < 1)
         {
             GameOver();
         }
-        else if(hp > MAX_HP)
-        {
-            hp = MAX_HP;
-        }
-        uiManager.HpUiController();
     }
 
     public void GameStart()
     {
         SceneManager.LoadScene("GameScene");
-        Time.timeScale = 1;
-        AddHp(2);
-        score = 0;
     }
 
     public void GameStop()
@@ -90,17 +84,17 @@ public class GameManager : MonoBehaviour
 
         isStop = !isStop;
 
-        uiManager.stopUiController(isStop);
+        uiManager.StopUiController(isStop);
     }
 
     public void GameOver()
     {
         Time.timeScale = 0;
-        uiManager.overUiController();
+        uiManager.OverUiController();
     }
 
     public void BackToMain()
     {
-        SceneManager.LoadScene("MainScene");
+        SceneManager.LoadScene("StartScene");
     }
 }

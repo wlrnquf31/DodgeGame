@@ -19,12 +19,12 @@ public class BulletHit : MonoBehaviour
     {
         if(collision.CompareTag("Shield"))
         {
-            GameManager.instance.AddScore(100);
+            GameManager.instance.ShieldHit();
             Destroy(gameObject);
         }
         else if(collision.CompareTag("Player"))
         {
-            GameManager.instance.AddHp(-1);
+            GameManager.instance.PlayerHit();
             Destroy(gameObject);
         }
     }

@@ -6,8 +6,6 @@ using UnityEngine.UI;
 public class UiManager : MonoBehaviour
 {
 
-    //public ScoreTextManager scoreTextManager;
-
     public GameObject hpMenu;
 
     public GameObject stopMenu;
@@ -20,9 +18,9 @@ public class UiManager : MonoBehaviour
     {
         if (hpMenu != null)
         {
-            for (int i = 0; i < GameManager.MAX_HP; i++)
+            for (int i = 0; i < GameManager.instance.player.MAX_HP ; i++)
             {
-                if (i <= GameManager.instance.hp - 1)
+                if (i <= GameManager.instance.player.Hp - 1)
                 {
                     hpMenu.transform.GetChild(i).gameObject.SetActive(true);
                 }
@@ -34,18 +32,18 @@ public class UiManager : MonoBehaviour
         }
     }
 
-    public void overUiController()
+    public void OverUiController()
     {
         overMenu.SetActive(true);
         overMenu.transform.GetChild(1).GetChild(1).GetComponent<Text>().text = "Score : " + GameManager.instance.score;
     }
 
-    public void stopUiController(bool isStop)
+    public void StopUiController(bool isStop)
     {
         stopMenu.SetActive(isStop);
     }
 
-    public void setScoreText(int score)
+    public void SetScoreText(int score)
     {
         scoreText.text = "Score : " + score;
     }

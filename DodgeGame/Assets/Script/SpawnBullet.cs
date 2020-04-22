@@ -37,9 +37,9 @@ public class SpawnBullet : MonoBehaviour
         int index = Random.Range(0, 4);
 
         Vector3 tmpPos = Vector3.zero;
-        tmpPos.x = area[index].transform.position.x + Random.Range(0, area[index].GetComponent<Collider2D>().bounds.size.x);
-        tmpPos.y = area[index].transform.position.y + Random.Range(0, area[index].GetComponent<Collider2D>().bounds.size.y);
-
+        tmpPos.x = Random.Range(area[index].GetComponent<Collider2D>().bounds.min.x, area[index].GetComponent<Collider2D>().bounds.max.x);
+        tmpPos.y = Random.Range(area[index].GetComponent<Collider2D>().bounds.min.y, area[index].GetComponent<Collider2D>().bounds.max.y);
+        
         GameObject newBullet = Instantiate(bullet, tmpPos, Quaternion.identity);
         shotBullet(newBullet);
     }
