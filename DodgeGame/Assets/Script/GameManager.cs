@@ -53,12 +53,14 @@ public class GameManager : MonoBehaviour
     {
         score += ADD_SCORE;
         uiManager.SetScoreText(score);
+        SoundManager.instance.PlayHitShieldSound();
     }
 
     public void PlayerHit()
     {
         player.Hp -= 1;
         uiManager.HpUiController();
+        SoundManager.instance.PlayHitCharacterSound();
         if (player.Hp < 1)
         {
             GameOver();
