@@ -28,6 +28,12 @@ public class Player : MonoBehaviour
     void Update()
     {
         playerMove();
+
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            //위치 바꿔야함
+            GameManager.instance.GamePlayToggle();
+        }
     }
 
     //public void SetHp(int addHp)
@@ -54,12 +60,6 @@ public class Player : MonoBehaviour
         if (Input.GetAxisRaw("Vertical") != 0)
         {
             transform.Translate(new Vector3(0f, Input.GetAxisRaw("Vertical") * Speed * Time.deltaTime, 0f));
-        }
-
-        //게임 멈추는 코드 위치 바꿔야함.
-        if (Input.GetKeyDown(KeyCode.Escape))
-        {
-            GameManager.instance.GameStop();
         }
 
         Vector3 pos = Camera.main.WorldToViewportPoint(transform.position);

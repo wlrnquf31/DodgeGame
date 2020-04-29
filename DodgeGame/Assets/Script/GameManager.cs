@@ -64,6 +64,7 @@ public class GameManager : MonoBehaviour
         if (player.Hp < 1)
         {
             GameOver();
+            SoundManager.instance.BGMToggle();
         }
     }
 
@@ -72,7 +73,7 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene("GameScene");
     }
 
-    public void GameStop()
+    public void GamePlayToggle()
     {
 
         if (isStop)
@@ -85,7 +86,7 @@ public class GameManager : MonoBehaviour
         }
 
         isStop = !isStop;
-
+        SoundManager.instance.BGMToggle();
         uiManager.StopUiController(isStop);
     }
 

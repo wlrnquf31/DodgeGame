@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class UiManager : MonoBehaviour
 {
@@ -11,6 +12,8 @@ public class UiManager : MonoBehaviour
     public GameObject stopMenu;
 
     public GameObject overMenu;
+
+    public GameObject optionMenu;
 
     public Text scoreText;
 
@@ -38,6 +41,11 @@ public class UiManager : MonoBehaviour
         overMenu.transform.GetChild(1).GetChild(1).GetComponent<Text>().text = "Score : " + GameManager.instance.score;
     }
 
+    public void OptionUiController()
+    {
+        optionMenu.SetActive(!optionMenu.activeInHierarchy);
+    }
+
     public void StopUiController(bool isStop)
     {
         stopMenu.SetActive(isStop);
@@ -46,5 +54,10 @@ public class UiManager : MonoBehaviour
     public void SetScoreText(int score)
     {
         scoreText.text = "Score : " + score;
+    }
+
+    public void StartBtn()
+    {
+        SceneManager.LoadScene("GameScene");
     }
 }
