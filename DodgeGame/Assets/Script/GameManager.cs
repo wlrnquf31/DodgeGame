@@ -24,7 +24,7 @@ public class GameManager : MonoBehaviour
     //public GameState currentGameState;
 
     public int score;
-    private readonly int ADD_SCORE = 100;
+    //private readonly int ADD_SCORE = 100;
 
     private bool isStop = false;
 
@@ -33,15 +33,34 @@ public class GameManager : MonoBehaviour
         if(instance == null)
         {
             instance = this;
+            DontDestroyOnLoad(gameObject);
         }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
+
+    private void OnApplicationPause(bool pause)
+    {
+        if(SceneManager.GetActiveScene().name == "GameScene")
+        {
+            if (!isStop)
+            {
+                GamePlayToggle();
+            }
+        }
+    }
+
+    private void OnApplicationQuit()
+    {
+        DataManager.instance.Save(DataManager.instance.Load());
     }
 
     private void Start()
     {
         //currentGameState = GameState.main;
-        Time.timeScale = 1;
-        player.Hp = 2;
-        score = 0;
+        
     }
 
     //public void SetGameState(GameState gameState)
@@ -51,7 +70,7 @@ public class GameManager : MonoBehaviour
 
     public void ShieldHit()
     {
-        score += ADD_SCORE;
+        score += DataManager.instance.Load().addScore;
         uiManager.SetScoreText(score);
         SoundManager.instance.PlayHitShieldSound();
     }
@@ -71,6 +90,9 @@ public class GameManager : MonoBehaviour
     public void GameStart()
     {
         SceneManager.LoadScene("GameScene");
+        Time.timeScale = 1;
+        player.Hp = 2;
+        score = 0;
     }
 
     public void GamePlayToggle()

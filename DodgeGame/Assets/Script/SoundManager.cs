@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using DataInfo;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -6,6 +7,7 @@ using UnityEngine.UI;
 [RequireComponent(typeof(AudioSource))]
 public class SoundManager : MonoBehaviour
 {
+    GameData data = new GameData();
 
     public static SoundManager instance;
 
@@ -43,8 +45,8 @@ public class SoundManager : MonoBehaviour
 
     private void InitSlider()
     {
-        effectSlider.value = 0.5f;
-        bgmSlider.value = 0.5f;
+        effectSlider.value = DataManager.instance.Load().effectVolume;
+        bgmSlider.value = DataManager.instance.Load().effectVolume;
     }
 
     private void InitBgm()
@@ -79,12 +81,20 @@ public class SoundManager : MonoBehaviour
 
     public void EffectSoundSlider()
     {
+        data = DataManager.instance.Load();
+
         effectAudio.volume = effectSlider.value;
+        data.effectVolume = effectSlider.value;
+        DataManager.instance.Save(data);
     }
 
     public void BGMSoundSlider()
     {
+        data = DataManager.instance.Load();
+
         bgmAudio.volume = bgmSlider.value;
+        data.bgmVolume = bgmSlider.value;
+        DataManager.instance.Save(data);
     }
 
     public void PlayHitShieldSound()

@@ -6,7 +6,7 @@ public class ShieldOrbitRotation : MonoBehaviour
 {
 
     public GameObject Player;
-    public float Speed;
+    //public float Speed;
 
     void Update()
     {
@@ -15,7 +15,7 @@ public class ShieldOrbitRotation : MonoBehaviour
 
     private void orbitRotation()
     {
-        transform.RotateAround(Player.transform.position, Vector3.forward, Speed * Time.deltaTime);
+        transform.RotateAround(Player.transform.position, Vector3.forward, DataManager.instance.Load().shieldSpeed * Time.deltaTime);
         transform.rotation = Quaternion.Euler(Vector3.zero);
     }
 }

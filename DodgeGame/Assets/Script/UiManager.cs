@@ -60,4 +60,10 @@ public class UiManager : MonoBehaviour
     {
         SceneManager.LoadScene("GameScene");
     }
+
+    public void ExitBtn()
+    {
+        Debug.Log("?");
+        Application.Quit();
+    }
 }

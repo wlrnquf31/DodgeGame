@@ -10,7 +10,7 @@ public class StartUiController : MonoBehaviour
         SceneManager.LoadScene("GameScene");
     }
 
-    public void OptionSetting()
+    public void ExitBtn()
     {
 
     }
