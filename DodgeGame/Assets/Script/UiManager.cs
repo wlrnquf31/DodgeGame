@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class UiManager : MonoBehaviour
 {
+    public static UiManager instance = null;
 
     public GameObject hpMenu;
 
@@ -16,6 +17,18 @@ public class UiManager : MonoBehaviour
     public GameObject optionMenu;
 
     public Text scoreText;
+
+    private void Awake()
+    {
+        if (instance == null)
+        {
+            instance = this;
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
 
     public void HpUiController()
     {
@@ -38,7 +51,8 @@ public class UiManager : MonoBehaviour
     public void OverUiController()
     {
         overMenu.SetActive(true);
-        overMenu.transform.GetChild(1).GetChild(1).GetComponent<Text>().text = "Score : " + GameManager.instance.score;
+        overMenu.transform.GetChild(1).GetChild(2).GetComponent<Text>().text = GameManager.instance.score.ToString();
+        overMenu.transform.GetChild(1).GetChild(4).GetComponent<Text>().text = DataManager.instance.Load().highScore.ToString();
     }
 
     public void OptionUiController()
@@ -56,14 +70,4 @@ public class UiManager : MonoBehaviour
         scoreText.text = "Score : " + score;
     }
 
-    public void StartBtn()
-    {
-        SceneManager.LoadScene("GameScene");
-    }
-
-    public void ExitBtn()
-    {
-        Debug.Log("?");
-        Application.Quit();
-    }
 }

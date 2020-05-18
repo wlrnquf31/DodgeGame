@@ -17,15 +17,13 @@ public class DataManager : MonoBehaviour
         if (instance == null)
         {
             instance = this;
-            DontDestroyOnLoad(gameObject);
             Initialize();
-            Save(new GameData());
-            Load();
         }
         else
         {
             Destroy(gameObject);
         }
+        DontDestroyOnLoad(gameObject);
     }
 
     public void Initialize()

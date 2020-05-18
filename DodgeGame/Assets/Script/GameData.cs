@@ -11,6 +11,8 @@ namespace DataInfo
 
         public float hpCure = 0.05f;
 
+        public int cash = 0;
+
         public int addScore = 50;
 
         public int highScore = 0;

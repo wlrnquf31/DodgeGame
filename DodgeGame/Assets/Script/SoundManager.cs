@@ -24,9 +24,13 @@ public class SoundManager : MonoBehaviour
 
     private void Awake()
     {
-        if(instance == null)
+        if (instance == null)
         {
             instance = this;
+        }
+        else
+        {
+            Destroy(gameObject);
         }
     }
 
@@ -46,7 +50,7 @@ public class SoundManager : MonoBehaviour
     private void InitSlider()
     {
         effectSlider.value = DataManager.instance.Load().effectVolume;
-        bgmSlider.value = DataManager.instance.Load().effectVolume;
+        bgmSlider.value = DataManager.instance.Load().bgmVolume;
     }
 
     private void InitBgm()
