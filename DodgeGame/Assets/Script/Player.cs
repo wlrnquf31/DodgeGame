@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using DataInfo;
 
 public class Player : MonoBehaviour
 {
@@ -22,8 +23,8 @@ public class Player : MonoBehaviour
             }
         }
     }
-    
-    public float Speed;
+
+    private GameData data = new GameData();
 
     void Update()
     {
@@ -36,30 +37,20 @@ public class Player : MonoBehaviour
         }
     }
 
-    //public void SetHp(int addHp)
-    //{
-    //    hp += addHp;
-
-    //    if (hp < 1)
-    //    {
-    //        GameOver();
-    //    }
-    //    else if (hp > MAX_HP)
-    //    {
-    //        hp = MAX_HP;
-    //    }
-    //    uiManager.HpUiController();
-    //}
+    private void Start()
+    {
+        data = DataManager.instance.Load();
+    }
 
     private void playerMove()
     {
         if (Input.GetAxisRaw("Horizontal") != 0)
         {
-            transform.Translate(new Vector3(Input.GetAxisRaw("Horizontal") * Speed * Time.deltaTime, 0f, 0f));
+            transform.Translate(new Vector3(Input.GetAxisRaw("Horizontal") * data.speed * Time.deltaTime, 0f, 0f));
         }
         if (Input.GetAxisRaw("Vertical") != 0)
         {
-            transform.Translate(new Vector3(0f, Input.GetAxisRaw("Vertical") * Speed * Time.deltaTime, 0f));
+            transform.Translate(new Vector3(0f, Input.GetAxisRaw("Vertical") * data.speed * Time.deltaTime, 0f));
         }
 
         Vector3 pos = Camera.main.WorldToViewportPoint(transform.position);

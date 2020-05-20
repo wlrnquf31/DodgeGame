@@ -106,11 +106,6 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public void GameStart()
-    {
-        SceneManager.LoadScene("GameScene");
-    }
-
     public void GameOver()
     {
         Time.timeScale = 0;
@@ -138,8 +133,13 @@ public class GameManager : MonoBehaviour
         Application.Quit();
     }
 
-    public void BackToMain()
+    public void GameStart()
     {
-        SceneManager.LoadScene("StartScene");
+        SceneManager.LoadScene("GameScene");
+    }
+
+    public void GoToMain()
+    {
+        SceneManager.LoadScene("MainScene");
     }
 }

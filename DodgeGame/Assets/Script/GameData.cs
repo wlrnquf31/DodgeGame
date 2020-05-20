@@ -7,9 +7,11 @@ namespace DataInfo
     [System.Serializable]
     public class GameData
     {
+        public float speed = 5;
+
         public float shieldSpeed = 100;
 
-        public float hpCure = 0.05f;
+        public float hpCureDrop = 0.05f;
 
         public int cash = 0;
 

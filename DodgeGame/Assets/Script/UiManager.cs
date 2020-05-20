@@ -18,6 +18,8 @@ public class UiManager : MonoBehaviour
 
     public Text scoreText;
 
+    public Text cashText;
+
     private void Awake()
     {
         if (instance == null)
@@ -70,4 +72,8 @@ public class UiManager : MonoBehaviour
         scoreText.text = "Score : " + score;
     }
 
+    public void SetCashText()
+    {
+        cashText.text = DataManager.instance.Load().cash.ToString();
+    }
 }
