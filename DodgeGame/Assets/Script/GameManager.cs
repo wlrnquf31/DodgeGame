@@ -23,7 +23,12 @@ public class GameManager : MonoBehaviour
 
     public Player player;
 
+    public GameObject cash;
+
     public int score;
+
+    public int gettingCash;
+    private readonly int addCash = 100;
 
     private bool isStop = false;
 
@@ -79,6 +84,13 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    public void CashHit()
+    {
+        gettingCash += addCash;
+        UiManager.instance.SetGettingCashText();
+        SoundManager.instance.PlayPickUpSound();
+    }
+
     public void GamePlayToggle()
     {
 
@@ -103,6 +115,12 @@ public class GameManager : MonoBehaviour
             Time.timeScale = 1;
             player.Hp = 2;
             score = 0;
+            StartCoroutine(SpawnCash());
+        }
+        else if(SceneManager.GetActiveScene().name.Equals("MainScene"))
+        {
+
+            UiManager.instance.SetCashText();
         }
     }
 
@@ -110,22 +128,8 @@ public class GameManager : MonoBehaviour
     {
         Time.timeScale = 0;
         HighScoreCheck();
+        UpdateHaveCash();
         UiManager.instance.OverUiController();
-    }
-
-    private bool HighScoreCheck()
-    {
-        data = DataManager.instance.Load();
-
-        if (score > data.highScore)
-        {
-            data.highScore = score;
-            DataManager.instance.Save(data);
-
-            return true;
-        }
-
-        return false;
     }
 
     public void GameExit()
@@ -141,5 +145,42 @@ public class GameManager : MonoBehaviour
     public void GoToMain()
     {
         SceneManager.LoadScene("MainScene");
+    }
+
+    IEnumerator SpawnCash()
+    {
+        while(true)
+        {
+            float randX = Random.Range(0, Screen.width);
+            float randY = Random.Range(0, Screen.height);
+
+            Vector3 randPos = Camera.main.ScreenToWorldPoint(new Vector3(randX, randY, 10));
+
+            Instantiate(cash, randPos, Quaternion.identity);
+
+            yield return new WaitForSeconds(3.0f);
+        }
+    }
+
+    private void UpdateHaveCash()
+    {
+        data = DataManager.instance.Load();
+        data.cash += gettingCash;
+        DataManager.instance.Save(data);
+    }
+
+    private bool HighScoreCheck()
+    {
+        data = DataManager.instance.Load();
+
+        if (score > data.highScore)
+        {
+            data.highScore = score;
+            DataManager.instance.Save(data);
+
+            return true;
+        }
+
+        return false;
     }
 }

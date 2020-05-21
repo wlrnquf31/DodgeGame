@@ -20,6 +20,8 @@ public class UiManager : MonoBehaviour
 
     public Text cashText;
 
+    public Text gettingCashText;
+
     private void Awake()
     {
         if (instance == null)
@@ -75,5 +77,10 @@ public class UiManager : MonoBehaviour
     public void SetCashText()
     {
         cashText.text = DataManager.instance.Load().cash.ToString();
+    }
+
+    public void SetGettingCashText()
+    {
+        gettingCashText.text = GameManager.instance.gettingCash.ToString();
     }
 }

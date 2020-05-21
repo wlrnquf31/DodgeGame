@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - Shield
+  - Cash
   layers:
   - Default
   - TransparentFX
@@ -44,6 +45,9 @@ TagManager:
     locked: 0
   - name: Ground
     uniqueID: 584309715
+    locked: 0
+  - name: Object
+    uniqueID: 154475799
     locked: 0
   - name: Player
     uniqueID: 3499798933
