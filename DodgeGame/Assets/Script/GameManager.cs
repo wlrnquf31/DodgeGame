@@ -22,6 +22,7 @@ public class GameManager : MonoBehaviour
     private GameData data = new GameData();
 
     public Player player;
+    private Sprite skin;
 
     public GameObject cash;
 
@@ -86,7 +87,7 @@ public class GameManager : MonoBehaviour
 
     public void CharacterChange(Sprite skin)
     {
-        player.GetComponent<SpriteRenderer>().sprite = skin;
+        this.skin = skin;
     }
 
     public void CashHit()
@@ -117,6 +118,7 @@ public class GameManager : MonoBehaviour
     {
         if(SceneManager.GetActiveScene().name.Equals("GameScene"))
         {
+            player.GetComponent<SpriteRenderer>().sprite = skin;
             Time.timeScale = 1;
             player.Hp = 2;
             score = 0;

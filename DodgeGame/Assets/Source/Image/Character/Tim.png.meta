@@ -1,23 +1,57 @@
 fileFormatVersion: 2
-guid: c0f93968069debe45a315e278ad35e10
+guid: 372bf67d30f413f42961a1c7b193c19c
 TextureImporter:
-  fileIDToRecycleName:
-    21300000: NPC1 (2)_0
-    21300002: NPC1 (2)_1
-    21300004: NPC1 (2)_2
-    21300006: NPC1 (2)_3
-    21300008: NPC1 (2)_4
-    21300010: NPC1 (2)_5
-    21300012: NPC1 (2)_6
-    21300014: NPC1 (2)_7
-    21300016: NPC1 (2)_8
-    21300018: NPC1 (2)_9
-    21300020: NPC1 (2)_10
-    21300022: NPC1 (2)_11
-    21300024: NPC1 (2)_12
-    21300026: NPC1 (2)_13
+  internalIDToNameTable:
+  - first:
+      213: 21300000
+    second: Heroe (2)_0
+  - first:
+      213: 21300002
+    second: Heroe (2)_1
+  - first:
+      213: 21300004
+    second: Heroe (2)_2
+  - first:
+      213: 21300006
+    second: Heroe (2)_3
+  - first:
+      213: 21300008
+    second: Heroe (2)_4
+  - first:
+      213: 21300010
+    second: Heroe (2)_5
+  - first:
+      213: 21300012
+    second: Heroe (2)_6
+  - first:
+      213: 21300014
+    second: Heroe (2)_7
+  - first:
+      213: 21300016
+    second: Heroe (2)_8
+  - first:
+      213: 21300018
+    second: Heroe (2)_9
+  - first:
+      213: 21300020
+    second: Heroe (2)_10
+  - first:
+      213: 21300022
+    second: Heroe (2)_11
+  - first:
+      213: 21300024
+    second: Heroe (2)_12
+  - first:
+      213: 21300026
+    second: Heroe (2)_13
+  - first:
+      213: 21300028
+    second: Heroe (2)_14
+  - first:
+      213: 21300030
+    second: Heroe (2)_15
   externalObjects: {}
-  serializedVersion: 7
+  serializedVersion: 10
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -45,7 +79,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
+    filterMode: 0
     aniso: -1
     mipBias: -100
     wrapU: 1
@@ -59,7 +93,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -72,7 +106,7 @@ TextureImporter:
   compressionQualitySet: 0
   textureFormatSet: 0
   platformSettings:
-  - serializedVersion: 2
+  - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -83,7 +117,8 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-  - serializedVersion: 2
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
     buildTarget: Standalone
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -94,11 +129,24 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: NPC1 (2)_0
+      name: Heroe (2)_0
       rect:
         serializedVersion: 2
         x: 0
@@ -112,13 +160,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1a6a5b6268c648c4486ae911dd31dd85
+      spriteID: 246eb70989d73a94da00e0fba644fd51
+      internalID: 21300000
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: NPC1 (2)_1
+      name: Heroe (2)_1
       rect:
         serializedVersion: 2
         x: 256
@@ -132,13 +181,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9934051c393232646ada307b5f8d8ab0
+      spriteID: 77772efa361ec2844bf888e3a3ed69f1
+      internalID: 21300002
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: NPC1 (2)_2
+      name: Heroe (2)_2
       rect:
         serializedVersion: 2
         x: 512
@@ -152,13 +202,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3d7794bf5ce4bff4980ddf246d0d0523
+      spriteID: bc3c4635c30d4e149a2e1277e4ac10c1
+      internalID: 21300004
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: NPC1 (2)_3
+      name: Heroe (2)_3
       rect:
         serializedVersion: 2
         x: 768
@@ -172,13 +223,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c23919c9520154945b1278cacda10ed0
+      spriteID: 48023067d69af1941ab4ffa067a00219
+      internalID: 21300006
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: NPC1 (2)_4
+      name: Heroe (2)_4
       rect:
         serializedVersion: 2
         x: 0
@@ -192,13 +244,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ff36bde34c5b2524489d5c85d141ee78
+      spriteID: cd3040c0f307c3243aab2ac624595fb0
+      internalID: 21300008
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: NPC1 (2)_5
+      name: Heroe (2)_5
       rect:
         serializedVersion: 2
         x: 256
@@ -212,13 +265,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cd98c36bbaacb3c4aac2f1407daf3cbd
+      spriteID: d16b1f10c316f76408dedebe2a7cde39
+      internalID: 21300010
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: NPC1 (2)_6
+      name: Heroe (2)_6
       rect:
         serializedVersion: 2
         x: 512
@@ -232,13 +286,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: be49d3fb5d8e65741aed7a65be464bec
+      spriteID: f62504225585dbc4d909eba0544e6888
+      internalID: 21300012
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: NPC1 (2)_7
+      name: Heroe (2)_7
       rect:
         serializedVersion: 2
         x: 768
@@ -252,13 +307,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5fb7ea5e653387a4bb5442554a0c6eec
+      spriteID: 8cfd4b448b98bb44cb0fda7719e88c86
+      internalID: 21300014
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: NPC1 (2)_8
+      name: Heroe (2)_8
       rect:
         serializedVersion: 2
         x: 0
@@ -272,13 +328,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: eb1e722636212794ba4b418087f72386
+      spriteID: 5fa533658213b5d408484d9aba83c982
+      internalID: 21300016
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: NPC1 (2)_9
+      name: Heroe (2)_9
       rect:
         serializedVersion: 2
         x: 256
@@ -292,13 +349,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a9bc5be23aab7c446ae60223067d80f5
+      spriteID: 683b2882cb149944a8535cdeea07d02f
+      internalID: 21300018
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: NPC1 (2)_10
+      name: Heroe (2)_10
       rect:
         serializedVersion: 2
         x: 512
@@ -312,13 +370,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: da56629fffc318d49906fb8332edbc1c
+      spriteID: 055702d9c0c79714ab0b690317702407
+      internalID: 21300020
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: NPC1 (2)_11
+      name: Heroe (2)_11
       rect:
         serializedVersion: 2
         x: 768
@@ -332,13 +391,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: db660b578fcd05e4cb175d5611a4dfe8
+      spriteID: f1577091781a55048b31573e70535872
+      internalID: 21300022
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: NPC1 (2)_12
+      name: Heroe (2)_12
       rect:
         serializedVersion: 2
         x: 0
@@ -352,13 +412,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: de4034d1f56a7e441a156cd675b71d13
+      spriteID: 5f6e221c0d7c3cf429b722aee3db2c96
+      internalID: 21300024
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: NPC1 (2)_13
+      name: Heroe (2)_13
       rect:
         serializedVersion: 2
         x: 256
@@ -372,7 +433,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f21a3b30276aba34783d444c4703ce72
+      spriteID: 9bbc49771332b924fac4a9bdfb830cdd
+      internalID: 21300026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroe (2)_14
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 0
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9f14a53a1a57ee4d87dfcd70016bd89
+      internalID: 21300028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroe (2)_15
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 0
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17ebc317ca231304db4940b3827178d8
+      internalID: 21300030
       vertices: []
       indices: 
       edges: []
@@ -380,11 +484,13 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: ec80797170f90d248af7684db0fba24f
+    spriteID: e4087c73f8f544f469ab39b34c45afc3
+    internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
+    secondaryTextures: []
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

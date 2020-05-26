@@ -218,6 +218,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6d082c51f996b245bd0d9213424c92c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Skins:
+  - {fileID: 3427114271967980436, guid: 97e765a6b53d8944dbca97c3f1c2a951, type: 3}
+  - {fileID: 21300000, guid: 9b18a24d82593b246a830e8dbc70d38e, type: 3}
+  - {fileID: 21300000, guid: 4ee5843fc71c6954ab9daafa40de566c, type: 3}
+  - {fileID: 21300000, guid: 9a4379832d8bbdd4e80fd9415d3f963b, type: 3}
+  - {fileID: 21300000, guid: 0ab0b3c697bedae48b150e6575072185, type: 3}
+  - {fileID: 21300000, guid: c0f93968069debe45a315e278ad35e10, type: 3}
+  - {fileID: 21300000, guid: d228a273ac6aea64da4aae309cfdef88, type: 3}
+  - {fileID: 21300000, guid: ea91c96b396479e4186a6e540de0ccb9, type: 3}
+  - {fileID: 21300000, guid: 372bf67d30f413f42961a1c7b193c19c, type: 3}
 --- !u!70 &2556393973512961768
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
