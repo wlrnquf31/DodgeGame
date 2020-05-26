@@ -84,6 +84,11 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    public void CharacterChange(Sprite skin)
+    {
+        player.GetComponent<SpriteRenderer>().sprite = skin;
+    }
+
     public void CashHit()
     {
         gettingCash += addCash;
@@ -119,7 +124,6 @@ public class GameManager : MonoBehaviour
         }
         else if(SceneManager.GetActiveScene().name.Equals("MainScene"))
         {
-
             UiManager.instance.SetCashText();
         }
     }
@@ -127,8 +131,7 @@ public class GameManager : MonoBehaviour
     public void GameOver()
     {
         Time.timeScale = 0;
-        HighScoreCheck();
-        UpdateHaveCash();
+        FinishDataSave();
         UiManager.instance.OverUiController();
     }
 
@@ -151,6 +154,8 @@ public class GameManager : MonoBehaviour
     {
         while(true)
         {
+            yield return new WaitForSeconds(3.0f);
+
             float randX = Random.Range(0, Screen.width);
             float randY = Random.Range(0, Screen.height);
 
@@ -158,29 +163,32 @@ public class GameManager : MonoBehaviour
 
             Instantiate(cash, randPos, Quaternion.identity);
 
-            yield return new WaitForSeconds(3.0f);
         }
     }
 
-    private void UpdateHaveCash()
+    private void FinishDataSave()
     {
         data = DataManager.instance.Load();
-        data.cash += gettingCash;
+
+        DataUpdateCash();
+        DataUpdateHighScore();
+
         DataManager.instance.Save(data);
     }
 
-    private bool HighScoreCheck()
+    private void DataUpdateCash()
     {
-        data = DataManager.instance.Load();
+        data.cash += gettingCash;
 
+    }
+
+    private void DataUpdateHighScore( )
+    {
         if (score > data.highScore)
         {
             data.highScore = score;
-            DataManager.instance.Save(data);
-
-            return true;
         }
 
-        return false;
     }
+
 }

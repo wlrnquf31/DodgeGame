@@ -22,7 +22,7 @@ public class SpawnBullet : MonoBehaviour
         WaitForSeconds wait = new WaitForSeconds(spawnTime);
         while(true)
         {
-            if(spawnTime > 0.15f)
+            if(spawnTime > 0.3f)
             {
                 spawnTime -= Time.deltaTime;
                 wait = new WaitForSeconds(spawnTime);

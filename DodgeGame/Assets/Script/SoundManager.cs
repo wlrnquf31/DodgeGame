@@ -43,8 +43,11 @@ public class SoundManager : MonoBehaviour
 
     private void Update()
     {
-        EffectSoundSlider();
-        BGMSoundSlider();
+        if(UiManager.instance.optionMenu.activeInHierarchy)
+        {
+            EffectSoundSlider();
+            BGMSoundSlider();
+        }
     }
 
     private void InitSlider()

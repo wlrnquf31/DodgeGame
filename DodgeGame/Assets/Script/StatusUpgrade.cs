@@ -10,24 +10,35 @@ public class StatusUpgrade : MonoBehaviour
     private GameData data = new GameData();
 
     public GameObject upgrade;
-    private string[,] upgradeInfo = new string[3, 2] {
-        { "플레이어의 이동속도를 높힐 수 있습니다.", "2500" },
-        { "실드의 움직이는 속도를 높힐 수 있습니다.", "2500" },
-        { "HP회복 아이템의 드롭 확률을 높힐 수 있습니다.", "2500" }
-    };
+    private string[,] upgradeInfo;
 
     public GameObject boost;
-    private string[,] boostInfo = new string[4,2] {
-        { "30초간 가드시 스코어 획득량 2배", "1500" },
-        { "10초간 무적", "2000" },
-        { "1회 피격 무시", "1500" },
-        { "게임 끝날 시 획득한 코인 2배", "2500" }
-    };
+    private string[,] boostInfo;
+
+    private void Start()
+    {
+        InitInfoData();
+    }
 
     public GameObject description;
 
     private GameObject curSelectItem;
 
+    public void InitInfoData()
+    {
+        upgradeInfo = new string[,]{
+            { "플레이어의 이동속도를 높힐 수 있습니다.\n 현재 속도 : " + DataManager.instance.Load().speed, "2500" },
+            { "실드의 움직이는 속도를 높힐 수 있습니다.\n 현재 속도 : " + DataManager.instance.Load().shieldSpeed, "2500" },
+            { "HP회복 아이템의 드롭 확률을 높힐 수 있습니다.\n 현재 확률 : " + DataManager.instance.Load().hpCureDrop * 100 + "%", "2500" }
+        };
+
+        boostInfo = new string[,] {
+            { "30초간 가드시 스코어 획득량 2배.\n 보유 : " + DataManager.instance.Load().keepBoost[0], "1500" },
+            { "10초간 무적.\n 보유 : " + DataManager.instance.Load().keepBoost[1], "2000" },
+            { "1회 피격 무시.\n 보유 : " + DataManager.instance.Load().keepBoost[2], "1500" },
+            { "게임 끝날 시 획득한 코인 2배.\n 보유 : " + DataManager.instance.Load().keepBoost[3], "2500" }
+        };
+    }
 
     //아이템을 클릭할 때 실행되는 함수.
     public void ClickItem()
@@ -35,6 +46,7 @@ public class StatusUpgrade : MonoBehaviour
         curSelectItem = EventSystem.current.currentSelectedGameObject;
 
         ShowDescription();
+
     }
 
     //클릭한 아이템에 설명과 구매버튼을 보여주는 함수.
@@ -44,12 +56,12 @@ public class StatusUpgrade : MonoBehaviour
 
         if (spItemName[0].Equals("Upgrade"))
         {
-            description.transform.GetChild(0).GetComponent<Text>().text = upgradeInfo[int.Parse(spItemName[1]), 1];
+            description.transform.GetChild(0).GetComponent<Text>().text = upgradeInfo[int.Parse(spItemName[1]), 0] + "\n 가격 : " + upgradeInfo[int.Parse(spItemName[1]), 1];
             description.transform.GetChild(1).gameObject.SetActive(true);
         }
         else
         {
-            description.transform.GetChild(0).GetComponent<Text>().text = boostInfo[int.Parse(spItemName[1]), 1];
+            description.transform.GetChild(0).GetComponent<Text>().text = boostInfo[int.Parse(spItemName[1]), 0] + "\n 가격 : " + boostInfo[int.Parse(spItemName[1]), 1];
             description.transform.GetChild(1).gameObject.SetActive(true);
         }
     }
@@ -71,7 +83,18 @@ public class StatusUpgrade : MonoBehaviour
             if (itemName.Equals("Upgrade"))
             {
                 data.cash -= itemPrice;
-                //업그레이드 해주는 코드
+                if(itemIndex.Equals(0))
+                {
+                    data.speed += 0.25f;
+                }
+                else if(itemIndex.Equals(1))
+                {
+                    data.shieldSpeed += 5f;
+                }
+                else
+                {
+                    data.hpCureDrop += 0.02f;
+                }
             }
             else
             {
@@ -79,6 +102,9 @@ public class StatusUpgrade : MonoBehaviour
                 data.keepBoost[itemIndex]++;
             }
             DataManager.instance.Save(data);
+            UiManager.instance.SetCashText();
+            InitInfoData();
+            ShowDescription();
         }
         else
         {
@@ -90,7 +116,7 @@ public class StatusUpgrade : MonoBehaviour
     //아이템의 가격과 현재 보유한 돈을 비교하는 함수.
     private bool CheckHaveCash(int price)
     {
-        if(price > DataManager.instance.Load().cash)
+        if (price > DataManager.instance.Load().cash)
         {
             return false;
         }
