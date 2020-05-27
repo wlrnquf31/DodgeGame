@@ -2,12 +2,26 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using DataInfo;
+using UnityEngine.UI;
 
 public class SkinChange : MonoBehaviour
 {
-    public Sprite[] Skins;
+    [SerializeField]
+    private List<Sprite> skins;
+
+    [System.NonSerialized]
+    public Sprite skin;
 
     private GameObject curSelectSkin;
+
+    private GameData data = new GameData();
+
+    private void Start()
+    {
+        SkinInit();
+        ShowCharacterBoard();
+    }
 
     public void ClickSkin()
     {
@@ -16,7 +30,26 @@ public class SkinChange : MonoBehaviour
 
     public void ChangeSkin()
     {
-        Sprite changedSkin = curSelectSkin.GetComponent<Sprite>();
-        GameManager.instance.CharacterChange(changedSkin);
+        skin = curSelectSkin.GetComponent<Sprite>();
+        ShowCharacterBoard();
+    }
+
+    private void ShowCharacterBoard()
+    {
+        gameObject.transform.GetChild(1).GetChild(0).GetComponent<Image>().sprite = skin;
+        gameObject.transform.GetChild(1).GetChild(0).GetComponent<RectTransform>().sizeDelta = skin.rect.size;
+    }
+
+    public void SkinInit()
+    {
+        data = DataManager.instance.Load();
+
+        if(data.currentSkin == null)
+        {
+            data.currentSkin = skins[0];
+        }
+
+        skin = data.currentSkin;
+        GameManager.instance.skin = skin;
     }
 }

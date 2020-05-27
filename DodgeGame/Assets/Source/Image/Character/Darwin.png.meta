@@ -44,6 +44,48 @@ TextureImporter:
   - first:
       213: 21300026
     second: image_13
+  - first:
+      213: -4155653800987730125
+    second: Darwin_0
+  - first:
+      213: 949631376477629808
+    second: Darwin_1
+  - first:
+      213: -5562286555162197308
+    second: Darwin_2
+  - first:
+      213: 2856430950282932420
+    second: Darwin_3
+  - first:
+      213: 3546365819160584908
+    second: Darwin_4
+  - first:
+      213: 6264687659887197208
+    second: Darwin_5
+  - first:
+      213: -6151869165798288410
+    second: Darwin_6
+  - first:
+      213: -8144628617119501454
+    second: Darwin_7
+  - first:
+      213: 5392612616247637277
+    second: Darwin_8
+  - first:
+      213: -629602444550664319
+    second: Darwin_9
+  - first:
+      213: -6402314352374374739
+    second: Darwin_10
+  - first:
+      213: 8635321991231698672
+    second: Darwin_11
+  - first:
+      213: 6383965087554773403
+    second: Darwin_12
+  - first:
+      213: 5872118108725317824
+    second: Darwin_13
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -102,7 +144,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 1024
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -114,7 +156,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Standalone
-    maxTextureSize: 2048
+    maxTextureSize: 1024
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -126,7 +168,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Android
-    maxTextureSize: 2048
+    maxTextureSize: 1024
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -140,13 +182,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: image_0
+      name: Darwin_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 576
-        width: 192
-        height: 192
+        x: 62
+        y: 599
+        width: 68
+        height: 146
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -154,20 +196,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: efd6ade4843a59346bbce3815e34576f
-      internalID: 21300000
+      spriteID: ac892fa732cafb44b8de2bbbf37d29dc
+      internalID: -4155653800987730125
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: image_1
+      name: Darwin_1
       rect:
         serializedVersion: 2
-        x: 192
-        y: 576
-        width: 192
-        height: 192
+        x: 254
+        y: 602
+        width: 68
+        height: 143
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -175,20 +217,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: de7541a182e28b949adb04560bb4a6b0
-      internalID: 21300002
+      spriteID: b939d7bbb12982349adcac207d731765
+      internalID: 949631376477629808
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: image_2
+      name: Darwin_2
       rect:
         serializedVersion: 2
-        x: 384
-        y: 576
-        width: 192
-        height: 192
+        x: 446
+        y: 599
+        width: 68
+        height: 146
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -196,20 +238,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4fbf96413e7dfac4db538c47e830ee02
-      internalID: 21300004
+      spriteID: e5bc9fb593f899144b93eaa1cf397534
+      internalID: -5562286555162197308
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: image_3
+      name: Darwin_3
       rect:
         serializedVersion: 2
-        x: 576
-        y: 576
-        width: 192
-        height: 192
+        x: 638
+        y: 602
+        width: 68
+        height: 143
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -217,20 +259,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9e666093247830c43bc2e26cda8fff68
-      internalID: 21300006
+      spriteID: 913cebfda46caf54fb1e77aaa1f9ff89
+      internalID: 2856430950282932420
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: image_4
+      name: Darwin_4
       rect:
         serializedVersion: 2
-        x: 0
-        y: 384
-        width: 192
-        height: 192
+        x: 62
+        y: 407
+        width: 68
+        height: 146
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -238,20 +280,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 46f6c40f4cc6cc94884561e79ce86658
-      internalID: 21300008
+      spriteID: ae347852856a8164ea9ca6f4f144f314
+      internalID: 3546365819160584908
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: image_5
+      name: Darwin_5
       rect:
         serializedVersion: 2
-        x: 192
-        y: 384
-        width: 192
-        height: 192
+        x: 254
+        y: 410
+        width: 68
+        height: 143
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -259,20 +301,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cc324bf2367d50e428028bd3fd21e8d1
-      internalID: 21300010
+      spriteID: c8db33b5264fb1244ad850781751c8b9
+      internalID: 6264687659887197208
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: image_6
+      name: Darwin_6
       rect:
         serializedVersion: 2
-        x: 384
-        y: 384
-        width: 192
-        height: 192
+        x: 446
+        y: 407
+        width: 68
+        height: 146
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -280,20 +322,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ac3d8aad94b87d64194315ac83cfa0fb
-      internalID: 21300012
+      spriteID: 1afa8b0bfd1668e4bb9e5caf5f64dd33
+      internalID: -6151869165798288410
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: image_7
+      name: Darwin_7
       rect:
         serializedVersion: 2
-        x: 576
-        y: 384
-        width: 192
-        height: 192
+        x: 638
+        y: 410
+        width: 68
+        height: 143
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -301,20 +343,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f4935dec5cb55d345950487e6a58a1d2
-      internalID: 21300014
+      spriteID: 788c0248332cbc74eae6047b26ef83cd
+      internalID: -8144628617119501454
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: image_8
+      name: Darwin_8
       rect:
         serializedVersion: 2
-        x: 0
-        y: 192
-        width: 192
-        height: 192
+        x: 53
+        y: 221
+        width: 77
+        height: 143
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -322,20 +364,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 652ad1b85fa4bcd4ab769546a1c92ad3
-      internalID: 21300016
+      spriteID: e96c9f8d78a75f945bd97022920b32d0
+      internalID: 5392612616247637277
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: image_9
+      name: Darwin_9
       rect:
         serializedVersion: 2
-        x: 192
-        y: 192
-        width: 192
-        height: 192
+        x: 245
+        y: 224
+        width: 77
+        height: 140
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -343,20 +385,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 57161ff85c45d84489b95eb56c2ade80
-      internalID: 21300018
+      spriteID: 11a9c358776c0264faaa8e143506c392
+      internalID: -629602444550664319
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: image_10
+      name: Darwin_10
       rect:
         serializedVersion: 2
-        x: 384
-        y: 192
-        width: 192
-        height: 192
+        x: 437
+        y: 221
+        width: 77
+        height: 143
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -364,20 +406,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bff80acfd9e1ee247a7a425bb2b0814e
-      internalID: 21300020
+      spriteID: a3de79ea5f49b1540823a4ba2f64090c
+      internalID: -6402314352374374739
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: image_11
+      name: Darwin_11
       rect:
         serializedVersion: 2
-        x: 576
-        y: 192
-        width: 192
-        height: 192
+        x: 638
+        y: 221
+        width: 77
+        height: 143
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -385,20 +427,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dd3a17caa883bbf4c8e5063c836735d5
-      internalID: 21300022
+      spriteID: a64eaa16c95bc424cacdc19f83be59c3
+      internalID: 8635321991231698672
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: image_12
+      name: Darwin_12
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 192
-        height: 192
+        x: 62
+        y: 32
+        width: 77
+        height: 140
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -406,20 +448,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 30e31764813be4e4984ba6fa43185fb5
-      internalID: 21300024
+      spriteID: 1837a048960f3524d9a471a39382b0eb
+      internalID: 6383965087554773403
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: image_13
+      name: Darwin_13
       rect:
         serializedVersion: 2
-        x: 192
-        y: 0
-        width: 192
-        height: 192
+        x: 254
+        y: 29
+        width: 77
+        height: 143
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -427,8 +469,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4e1e6e10829ad744eb1b9bc145854a80
-      internalID: 21300026
+      spriteID: 2a4783d7defdf7440b17b299e723b9b7
+      internalID: 5872118108725317824
       vertices: []
       indices: 
       edges: []

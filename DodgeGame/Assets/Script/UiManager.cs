@@ -16,6 +16,8 @@ public class UiManager : MonoBehaviour
 
     public GameObject optionMenu;
 
+    public GameObject changeMenu;
+
     public Text scoreText;
 
     public Text cashText;
@@ -62,6 +64,11 @@ public class UiManager : MonoBehaviour
     public void OptionUiController()
     {
         optionMenu.SetActive(!optionMenu.activeInHierarchy);
+    }
+
+    public void SkinChangeUiController()
+    {
+        changeMenu.SetActive(!changeMenu.activeInHierarchy);
     }
 
     public void StopUiController(bool isStop)

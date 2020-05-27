@@ -44,6 +44,48 @@ TextureImporter:
   - first:
       213: 21300026
     second: image 5_13
+  - first:
+      213: -5880873447851601858
+    second: Blue Knight_0
+  - first:
+      213: 5763608039629846548
+    second: Blue Knight_1
+  - first:
+      213: -6240930302009850688
+    second: Blue Knight_2
+  - first:
+      213: -2981942608527557833
+    second: Blue Knight_3
+  - first:
+      213: 6477461299262689786
+    second: Blue Knight_4
+  - first:
+      213: -8982523340842882512
+    second: Blue Knight_5
+  - first:
+      213: -3689662099380697182
+    second: Blue Knight_6
+  - first:
+      213: -5525417570943707335
+    second: Blue Knight_7
+  - first:
+      213: -5389998380094642305
+    second: Blue Knight_8
+  - first:
+      213: 1573394153692981155
+    second: Blue Knight_9
+  - first:
+      213: 6777941621874054231
+    second: Blue Knight_10
+  - first:
+      213: 1530398046391864296
+    second: Blue Knight_11
+  - first:
+      213: 5640046839903598194
+    second: Blue Knight_12
+  - first:
+      213: -5344471477932003858
+    second: Blue Knight_13
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -102,7 +144,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 1024
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -114,7 +156,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Standalone
-    maxTextureSize: 2048
+    maxTextureSize: 1024
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -126,7 +168,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Android
-    maxTextureSize: 2048
+    maxTextureSize: 1024
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -140,13 +182,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: image 5_0
+      name: Blue Knight_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 576
-        width: 192
-        height: 192
+        x: 62
+        y: 599
+        width: 68
+        height: 169
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -154,20 +196,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 93ab510ef851fc74cb116d9626c2b8cc
-      internalID: 21300000
+      spriteID: 5f586993d1754f14f9a8bb2855e2f033
+      internalID: -5880873447851601858
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: image 5_1
+      name: Blue Knight_1
       rect:
         serializedVersion: 2
-        x: 192
-        y: 576
-        width: 192
-        height: 192
+        x: 254
+        y: 602
+        width: 68
+        height: 166
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -175,20 +217,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3286bda86de427d4c969a25c8d02c832
-      internalID: 21300002
+      spriteID: 00a3172df1303f34d964efed0572d387
+      internalID: 5763608039629846548
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: image 5_2
+      name: Blue Knight_2
       rect:
         serializedVersion: 2
-        x: 384
-        y: 576
-        width: 192
-        height: 192
+        x: 446
+        y: 599
+        width: 68
+        height: 169
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -196,20 +238,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 00981594ca11ade4496d5098c5a2f271
-      internalID: 21300004
+      spriteID: 1a923255240a961468bc9af90fcb41b2
+      internalID: -6240930302009850688
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: image 5_3
+      name: Blue Knight_3
       rect:
         serializedVersion: 2
-        x: 576
-        y: 576
-        width: 192
-        height: 192
+        x: 638
+        y: 602
+        width: 68
+        height: 166
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -217,20 +259,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d5eab42b1edc6514c968f363fa0503e0
-      internalID: 21300006
+      spriteID: baa43da6448e2f54cb1054ed7fed4ff0
+      internalID: -2981942608527557833
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: image 5_4
+      name: Blue Knight_4
       rect:
         serializedVersion: 2
-        x: 0
-        y: 384
-        width: 192
-        height: 192
+        x: 62
+        y: 407
+        width: 68
+        height: 170
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -238,20 +280,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a75a45f4a3e9486458554c6369e26e5b
-      internalID: 21300008
+      spriteID: 1a01b8bc6b27da3438d1dcd1d8ab2ce7
+      internalID: 6477461299262689786
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: image 5_5
+      name: Blue Knight_5
       rect:
         serializedVersion: 2
-        x: 192
-        y: 384
-        width: 192
-        height: 192
+        x: 254
+        y: 410
+        width: 68
+        height: 167
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -259,20 +301,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2b4fddf2c6ae00a44a43512a6d8ab575
-      internalID: 21300010
+      spriteID: 1e9dc42217adc8f4481ff1ca762be835
+      internalID: -8982523340842882512
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: image 5_6
+      name: Blue Knight_6
       rect:
         serializedVersion: 2
-        x: 384
-        y: 384
-        width: 192
-        height: 192
+        x: 446
+        y: 407
+        width: 68
+        height: 170
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -280,20 +322,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a89afddaf96e6364d994d9bdad9f5667
-      internalID: 21300012
+      spriteID: b85bd3405c1d7524aa46e9cf4e0c7447
+      internalID: -3689662099380697182
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: image 5_7
+      name: Blue Knight_7
       rect:
         serializedVersion: 2
-        x: 576
-        y: 384
-        width: 192
-        height: 192
+        x: 638
+        y: 410
+        width: 68
+        height: 167
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -301,20 +343,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a1e2ce3b9b52aac4787bd8cd535cfff6
-      internalID: 21300014
+      spriteID: 7653aa1cc1c95c44285c0e51eb705d60
+      internalID: -5525417570943707335
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: image 5_8
+      name: Blue Knight_8
       rect:
         serializedVersion: 2
-        x: 0
-        y: 192
-        width: 192
-        height: 192
+        x: 59
+        y: 221
+        width: 101
+        height: 164
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -322,20 +364,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3710fc54bb686af41b65fc7d0d1c6c7c
-      internalID: 21300016
+      spriteID: 467e12eb40dbac94ba0be49926e67a2d
+      internalID: -5389998380094642305
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: image 5_9
+      name: Blue Knight_9
       rect:
         serializedVersion: 2
-        x: 192
-        y: 192
-        width: 192
-        height: 192
+        x: 251
+        y: 224
+        width: 101
+        height: 161
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -343,20 +385,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e94e31f6b5b6bfa48b7b45306323c882
-      internalID: 21300018
+      spriteID: cf185fe60f2a1cc49915893995c541ef
+      internalID: 1573394153692981155
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: image 5_10
+      name: Blue Knight_10
       rect:
         serializedVersion: 2
-        x: 384
-        y: 192
-        width: 192
-        height: 192
+        x: 443
+        y: 221
+        width: 101
+        height: 164
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -364,20 +406,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a90cbcd8694f20c44827a5d6c1842149
-      internalID: 21300020
+      spriteID: 8f0c5ff2f237df244932a826a3cfdac5
+      internalID: 6777941621874054231
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: image 5_11
+      name: Blue Knight_11
       rect:
         serializedVersion: 2
-        x: 576
-        y: 192
-        width: 192
-        height: 192
+        x: 608
+        y: 221
+        width: 101
+        height: 164
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -385,20 +427,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4555f6ed649b40941bfd8a9427fc2b2c
-      internalID: 21300022
+      spriteID: 36eb5dfe5068c6f4ab98198a98097e62
+      internalID: 1530398046391864296
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: image 5_12
+      name: Blue Knight_12
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 192
-        height: 192
+        x: 32
+        y: 32
+        width: 101
+        height: 161
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -406,20 +448,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0f6503c2288760d4db469313d950ab08
-      internalID: 21300024
+      spriteID: 17f1a6f14ac2b7148b970f36056f95bf
+      internalID: 5640046839903598194
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: image 5_13
+      name: Blue Knight_13
       rect:
         serializedVersion: 2
-        x: 192
-        y: 0
-        width: 192
-        height: 192
+        x: 224
+        y: 29
+        width: 101
+        height: 164
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -427,8 +469,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fbefe039bdd3d7644954a88ac1dd3e4b
-      internalID: 21300026
+      spriteID: 64b6ad05234e4c449b17efc98a48b0f3
+      internalID: -5344471477932003858
       vertices: []
       indices: 
       edges: []

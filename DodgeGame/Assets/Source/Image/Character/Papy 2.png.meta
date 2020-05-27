@@ -44,6 +44,48 @@ TextureImporter:
   - first:
       213: 21300026
     second: NPC2 (2)_13
+  - first:
+      213: 2932644848520067002
+    second: Papy 2_0
+  - first:
+      213: 847147867365629154
+    second: Papy 2_1
+  - first:
+      213: 6566926988319509999
+    second: Papy 2_2
+  - first:
+      213: 1411712545260174474
+    second: Papy 2_3
+  - first:
+      213: -4829748219751770251
+    second: Papy 2_4
+  - first:
+      213: -5598449170728170534
+    second: Papy 2_5
+  - first:
+      213: 2166488067873624245
+    second: Papy 2_6
+  - first:
+      213: -7055419655892963556
+    second: Papy 2_7
+  - first:
+      213: -1714241921549340293
+    second: Papy 2_8
+  - first:
+      213: -5052014367958256491
+    second: Papy 2_9
+  - first:
+      213: 109706216787321485
+    second: Papy 2_10
+  - first:
+      213: -570922731484262426
+    second: Papy 2_11
+  - first:
+      213: -6092076457858576820
+    second: Papy 2_12
+  - first:
+      213: 6519068429303474336
+    second: Papy 2_13
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -102,7 +144,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 1024
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -114,7 +156,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Standalone
-    maxTextureSize: 2048
+    maxTextureSize: 1024
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -126,7 +168,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Android
-    maxTextureSize: 2048
+    maxTextureSize: 1024
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -140,13 +182,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: NPC2 (2)_0
+      name: Papy 2_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 768
-        width: 256
-        height: 256
+        x: 81
+        y: 797
+        width: 94
+        height: 198
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -154,20 +196,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3006439a12a305a45a5e50f1bf396b46
-      internalID: 21300000
+      spriteID: 5d1634c6f5cf4a744b1fe632a128d025
+      internalID: 2932644848520067002
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: NPC2 (2)_1
+      name: Papy 2_1
       rect:
         serializedVersion: 2
-        x: 256
-        y: 768
-        width: 256
-        height: 256
+        x: 337
+        y: 801
+        width: 94
+        height: 194
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -175,20 +217,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 78b3acc7c4b1fca40825ef130ee40760
-      internalID: 21300002
+      spriteID: ef36d757d91726248bf793575afe8bba
+      internalID: 847147867365629154
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: NPC2 (2)_2
+      name: Papy 2_2
       rect:
         serializedVersion: 2
-        x: 512
-        y: 768
-        width: 256
-        height: 256
+        x: 593
+        y: 797
+        width: 94
+        height: 198
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -196,20 +238,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 71c2b2dad6fec9046b319db5be0d9663
-      internalID: 21300004
+      spriteID: 34dea8c0ff6b985448d94cf72f609fb8
+      internalID: 6566926988319509999
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: NPC2 (2)_3
+      name: Papy 2_3
       rect:
         serializedVersion: 2
-        x: 768
-        y: 768
-        width: 256
-        height: 256
+        x: 849
+        y: 801
+        width: 94
+        height: 194
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -217,20 +259,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ee150cbb0c8f07b47a964a57d3353113
-      internalID: 21300006
+      spriteID: f3cbc65934679334e871918a40a213c1
+      internalID: 1411712545260174474
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: NPC2 (2)_4
+      name: Papy 2_4
       rect:
         serializedVersion: 2
-        x: 0
-        y: 512
-        width: 256
-        height: 256
+        x: 81
+        y: 541
+        width: 94
+        height: 198
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -238,20 +280,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 647b9914d9c9fa747afaf19881ab60f3
-      internalID: 21300008
+      spriteID: 779e61d656c79a04b9424a9e93a57d0d
+      internalID: -4829748219751770251
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: NPC2 (2)_5
+      name: Papy 2_5
       rect:
         serializedVersion: 2
-        x: 256
-        y: 512
-        width: 256
-        height: 256
+        x: 337
+        y: 545
+        width: 94
+        height: 194
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -259,20 +301,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 497d551162c518a4c86be0e090e0ba15
-      internalID: 21300010
+      spriteID: 5366fa8ce9ab2d240b3f445c67a050df
+      internalID: -5598449170728170534
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: NPC2 (2)_6
+      name: Papy 2_6
       rect:
         serializedVersion: 2
-        x: 512
-        y: 512
-        width: 256
-        height: 256
+        x: 593
+        y: 541
+        width: 94
+        height: 198
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -280,20 +322,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7058db1112ffde74c8efbc37c0190f01
-      internalID: 21300012
+      spriteID: 545e9b18fc56a0047aebd0b577cd0c78
+      internalID: 2166488067873624245
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: NPC2 (2)_7
+      name: Papy 2_7
       rect:
         serializedVersion: 2
-        x: 768
-        y: 512
-        width: 256
-        height: 256
+        x: 849
+        y: 545
+        width: 94
+        height: 194
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -301,20 +343,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3b525731236984f4ea7816e0d1c24191
-      internalID: 21300014
+      spriteID: 450edef4147f7584c9a2a174b73e5bd2
+      internalID: -7055419655892963556
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: NPC2 (2)_8
+      name: Papy 2_8
       rect:
         serializedVersion: 2
-        x: 0
-        y: 256
-        width: 256
-        height: 256
+        x: 81
+        y: 293
+        width: 90
+        height: 186
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -322,20 +364,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: aec36e10dcfb1fc45bd4ce6e7e57382a
-      internalID: 21300016
+      spriteID: e7331099fa871a24b86561ab7149bfbc
+      internalID: -1714241921549340293
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: NPC2 (2)_9
+      name: Papy 2_9
       rect:
         serializedVersion: 2
-        x: 256
-        y: 256
-        width: 256
-        height: 256
+        x: 337
+        y: 297
+        width: 90
+        height: 182
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -343,20 +385,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0aa5837984bfc2e4e9276cbfbe2be6da
-      internalID: 21300018
+      spriteID: 6202e6a40427999489014fe43d4743a4
+      internalID: -5052014367958256491
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: NPC2 (2)_10
+      name: Papy 2_10
       rect:
         serializedVersion: 2
-        x: 512
-        y: 256
-        width: 256
-        height: 256
+        x: 593
+        y: 293
+        width: 90
+        height: 186
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -364,20 +406,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 14767c6056c23144399f40ba1031fab8
-      internalID: 21300020
+      spriteID: 1aa1f7cd74ba4be46b76010256ba651c
+      internalID: 109706216787321485
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: NPC2 (2)_11
+      name: Papy 2_11
       rect:
         serializedVersion: 2
-        x: 768
-        y: 256
-        width: 256
-        height: 256
+        x: 853
+        y: 293
+        width: 90
+        height: 186
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -385,20 +427,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4f4d3c5cd4633f7498afb41d2cb3c8dd
-      internalID: 21300022
+      spriteID: 8d3037ccde8c4ae48b29e4e2ea46500d
+      internalID: -570922731484262426
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: NPC2 (2)_12
+      name: Papy 2_12
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 256
-        height: 256
+        x: 85
+        y: 41
+        width: 90
+        height: 182
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -406,20 +448,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ad8ad29bc95839a439bd0ac29db02114
-      internalID: 21300024
+      spriteID: b1abb1c1c4090a4429cba4d208d17197
+      internalID: -6092076457858576820
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: NPC2 (2)_13
+      name: Papy 2_13
       rect:
         serializedVersion: 2
-        x: 256
-        y: 0
-        width: 256
-        height: 256
+        x: 341
+        y: 37
+        width: 90
+        height: 186
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -427,8 +469,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7a5d49983184541438966a76016430d6
-      internalID: 21300026
+      spriteID: 9209946317adbf64aa416901d18d7b22
+      internalID: 6519068429303474336
       vertices: []
       indices: 
       edges: []

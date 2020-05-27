@@ -22,7 +22,7 @@ public class GameManager : MonoBehaviour
     private GameData data = new GameData();
 
     public Player player;
-    private Sprite skin;
+    public Sprite skin;
 
     public GameObject cash;
 
@@ -83,11 +83,6 @@ public class GameManager : MonoBehaviour
             GameOver();
             SoundManager.instance.BGMToggle();
         }
-    }
-
-    public void CharacterChange(Sprite skin)
-    {
-        this.skin = skin;
     }
 
     public void CashHit()

@@ -44,6 +44,48 @@ TextureImporter:
   - first:
       213: 21300026
     second: image 3_13
+  - first:
+      213: -2589397988996146828
+    second: Elfi_0
+  - first:
+      213: 5131680548876165901
+    second: Elfi_1
+  - first:
+      213: -3143655595708199542
+    second: Elfi_2
+  - first:
+      213: -3111690996174677298
+    second: Elfi_3
+  - first:
+      213: -1142132265235431545
+    second: Elfi_4
+  - first:
+      213: 200222849516827004
+    second: Elfi_5
+  - first:
+      213: 6339559540477771278
+    second: Elfi_6
+  - first:
+      213: -4807514655019758591
+    second: Elfi_7
+  - first:
+      213: 8526965206326949373
+    second: Elfi_8
+  - first:
+      213: -8673494813049178963
+    second: Elfi_9
+  - first:
+      213: -2509914197950593928
+    second: Elfi_10
+  - first:
+      213: 2708396687864563097
+    second: Elfi_11
+  - first:
+      213: -1213524100458087545
+    second: Elfi_12
+  - first:
+      213: -1712586200377078088
+    second: Elfi_13
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -102,7 +144,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 1024
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -114,7 +156,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Standalone
-    maxTextureSize: 2048
+    maxTextureSize: 1024
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -126,7 +168,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Android
-    maxTextureSize: 2048
+    maxTextureSize: 1024
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -140,13 +182,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: image 3_0
+      name: Elfi_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 576
-        width: 192
-        height: 192
+        x: 44
+        y: 599
+        width: 101
+        height: 146
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -154,20 +196,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 47628f1149d53cb4fb02346d604b276c
-      internalID: 21300000
+      spriteID: 3c8261a43ea26254093bbd5ea120ee2e
+      internalID: -2589397988996146828
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: image 3_1
+      name: Elfi_1
       rect:
         serializedVersion: 2
-        x: 192
-        y: 576
-        width: 192
-        height: 192
+        x: 236
+        y: 602
+        width: 101
+        height: 143
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -175,20 +217,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2cacc81cf85dcbb4e82d38a326dcd968
-      internalID: 21300002
+      spriteID: 7a1e2b3885406e7428b744edb3d8705f
+      internalID: 5131680548876165901
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: image 3_2
+      name: Elfi_2
       rect:
         serializedVersion: 2
-        x: 384
-        y: 576
-        width: 192
-        height: 192
+        x: 428
+        y: 599
+        width: 101
+        height: 146
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -196,20 +238,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ce222f29638241944bf376bea5ef750e
-      internalID: 21300004
+      spriteID: 327db178e256a6a4babe6e139694f309
+      internalID: -3143655595708199542
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: image 3_3
+      name: Elfi_3
       rect:
         serializedVersion: 2
-        x: 576
-        y: 576
-        width: 192
-        height: 192
+        x: 620
+        y: 602
+        width: 101
+        height: 143
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -217,20 +259,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 151e5af6e2dc3ea419d3848422d3679d
-      internalID: 21300006
+      spriteID: a012009bcdf97fc4fad30a9c4d4f38be
+      internalID: -3111690996174677298
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: image 3_4
+      name: Elfi_4
       rect:
         serializedVersion: 2
-        x: 0
-        y: 384
-        width: 192
-        height: 192
+        x: 44
+        y: 407
+        width: 101
+        height: 146
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -238,20 +280,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e15e401e94bdf9240be142c803ad4c10
-      internalID: 21300008
+      spriteID: 081e8e3315ff4b14d89e44b9fa34e1f1
+      internalID: -1142132265235431545
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: image 3_5
+      name: Elfi_5
       rect:
         serializedVersion: 2
-        x: 192
-        y: 384
-        width: 192
-        height: 192
+        x: 236
+        y: 410
+        width: 101
+        height: 143
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -259,20 +301,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e2d0ffaf28ea59b458c44d8c5f1c9f86
-      internalID: 21300010
+      spriteID: e52c012d2fd151549bca24596bf0f149
+      internalID: 200222849516827004
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: image 3_6
+      name: Elfi_6
       rect:
         serializedVersion: 2
-        x: 384
-        y: 384
-        width: 192
-        height: 192
+        x: 428
+        y: 407
+        width: 101
+        height: 146
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -280,20 +322,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 06c7537adf3da94449b921518bd56f0b
-      internalID: 21300012
+      spriteID: 3c7491351be15644a8856d60e2dba955
+      internalID: 6339559540477771278
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: image 3_7
+      name: Elfi_7
       rect:
         serializedVersion: 2
-        x: 576
-        y: 384
-        width: 192
-        height: 192
+        x: 620
+        y: 410
+        width: 101
+        height: 143
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -301,20 +343,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d03128cf1f76b604aad7d01a612c6379
-      internalID: 21300014
+      spriteID: 8c5b824a88f0095479f5ad6f3b909637
+      internalID: -4807514655019758591
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: image 3_8
+      name: Elfi_8
       rect:
         serializedVersion: 2
-        x: 0
-        y: 192
-        width: 192
-        height: 192
+        x: 53
+        y: 221
+        width: 86
+        height: 143
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -322,20 +364,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a21d86a9715f40d48a9cbc3c3101e596
-      internalID: 21300016
+      spriteID: fa1b1c4865d755d42a68d6fc0d3c7f82
+      internalID: 8526965206326949373
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: image 3_9
+      name: Elfi_9
       rect:
         serializedVersion: 2
-        x: 192
-        y: 192
-        width: 192
-        height: 192
+        x: 245
+        y: 224
+        width: 86
+        height: 140
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -343,20 +385,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 55392a701e686674b8434bb93a16e6b5
-      internalID: 21300018
+      spriteID: fb86972045fe4424b8a3f9d86e3220aa
+      internalID: -8673494813049178963
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: image 3_10
+      name: Elfi_10
       rect:
         serializedVersion: 2
-        x: 384
-        y: 192
-        width: 192
-        height: 192
+        x: 437
+        y: 221
+        width: 86
+        height: 143
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -364,20 +406,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 273847292c13e344e8e234d1571abc74
-      internalID: 21300020
+      spriteID: dc084b4f6e576054da3dfe21c34b643b
+      internalID: -2509914197950593928
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: image 3_11
+      name: Elfi_11
       rect:
         serializedVersion: 2
-        x: 576
-        y: 192
-        width: 192
-        height: 192
+        x: 629
+        y: 221
+        width: 86
+        height: 143
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -385,20 +427,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 669652a3f6f19c74e94757f168739e7b
-      internalID: 21300022
+      spriteID: 7f9e5bebb1108fa4681b1abfc6b8457a
+      internalID: 2708396687864563097
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: image 3_12
+      name: Elfi_12
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 192
-        height: 192
+        x: 53
+        y: 32
+        width: 86
+        height: 140
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -406,20 +448,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: de86f72889516e642891c67fd27212cf
-      internalID: 21300024
+      spriteID: db4e606bcecef8a40b03999edb045884
+      internalID: -1213524100458087545
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: image 3_13
+      name: Elfi_13
       rect:
         serializedVersion: 2
-        x: 192
-        y: 0
-        width: 192
-        height: 192
+        x: 245
+        y: 29
+        width: 86
+        height: 143
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -427,8 +469,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d1a0c03b7a9590d4e8d30b7ebcddf64a
-      internalID: 21300026
+      spriteID: f052acc8bc537914a8776b52b986e301
+      internalID: -1712586200377078088
       vertices: []
       indices: 
       edges: []

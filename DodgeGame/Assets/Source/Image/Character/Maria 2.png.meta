@@ -44,6 +44,48 @@ TextureImporter:
   - first:
       213: 21300026
     second: NPC3 (1)_13
+  - first:
+      213: 8092950604599720538
+    second: Maria 2_0
+  - first:
+      213: -4582379388693629993
+    second: Maria 2_1
+  - first:
+      213: 2758911371160315596
+    second: Maria 2_2
+  - first:
+      213: -3221395737961417882
+    second: Maria 2_3
+  - first:
+      213: 4517192833854514540
+    second: Maria 2_4
+  - first:
+      213: -8078831293962021422
+    second: Maria 2_5
+  - first:
+      213: -6499725334327983887
+    second: Maria 2_6
+  - first:
+      213: -7810707130393468736
+    second: Maria 2_7
+  - first:
+      213: -4881643179185963708
+    second: Maria 2_8
+  - first:
+      213: -5795927295136704038
+    second: Maria 2_9
+  - first:
+      213: -6760307293621995737
+    second: Maria 2_10
+  - first:
+      213: 7433485516786678184
+    second: Maria 2_11
+  - first:
+      213: 758870478841811627
+    second: Maria 2_12
+  - first:
+      213: -4532451077063745984
+    second: Maria 2_13
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -102,7 +144,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 1024
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -114,7 +156,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Standalone
-    maxTextureSize: 2048
+    maxTextureSize: 1024
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -126,7 +168,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Android
-    maxTextureSize: 2048
+    maxTextureSize: 1024
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -140,13 +182,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: NPC3 (1)_0
+      name: Maria 2_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 768
-        width: 256
-        height: 256
+        x: 70
+        y: 798
+        width: 116
+        height: 196
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -154,20 +196,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b1b692a746b6a004e929d05c2b6ec9b9
-      internalID: 21300000
+      spriteID: 7cd778bf530576e408f0ac9af97e1d8a
+      internalID: 8092950604599720538
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: NPC3 (1)_1
+      name: Maria 2_1
       rect:
         serializedVersion: 2
-        x: 256
-        y: 768
-        width: 256
-        height: 256
+        x: 322
+        y: 802
+        width: 120
+        height: 192
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -175,20 +217,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c01a6371dd9315740b109bc5c8f6dc9a
-      internalID: 21300002
+      spriteID: f1f1613f57570534297a3b6d647af145
+      internalID: -4582379388693629993
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: NPC3 (1)_2
+      name: Maria 2_2
       rect:
         serializedVersion: 2
-        x: 512
-        y: 768
-        width: 256
-        height: 256
+        x: 582
+        y: 798
+        width: 116
+        height: 196
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -196,20 +238,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c8ff96bec832b804199c098d3225a269
-      internalID: 21300004
+      spriteID: d68cfceb11288774c8e286bffb08f2ea
+      internalID: 2758911371160315596
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: NPC3 (1)_3
+      name: Maria 2_3
       rect:
         serializedVersion: 2
-        x: 768
-        y: 768
-        width: 256
-        height: 256
+        x: 838
+        y: 802
+        width: 120
+        height: 192
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -217,20 +259,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c2eab368086cc374499a8a8711525091
-      internalID: 21300006
+      spriteID: 48b42d742acae3140bc9f1150c4f7cc4
+      internalID: -3221395737961417882
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: NPC3 (1)_4
+      name: Maria 2_4
       rect:
         serializedVersion: 2
-        x: 0
-        y: 512
-        width: 256
-        height: 256
+        x: 70
+        y: 542
+        width: 112
+        height: 196
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -238,20 +280,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5ba0bf595bd296642a05f70f6fdb334c
-      internalID: 21300008
+      spriteID: b85b88428c6c0164e82039f60d4e7e16
+      internalID: 4517192833854514540
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: NPC3 (1)_5
+      name: Maria 2_5
       rect:
         serializedVersion: 2
-        x: 256
-        y: 512
-        width: 256
-        height: 256
+        x: 326
+        y: 546
+        width: 112
+        height: 192
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -259,20 +301,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 151dc8e97c19c98469a8e02796afe4d3
-      internalID: 21300010
+      spriteID: 561f0e4b3ae298846a0dbfe1c6af7cc2
+      internalID: -8078831293962021422
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: NPC3 (1)_6
+      name: Maria 2_6
       rect:
         serializedVersion: 2
-        x: 512
-        y: 512
-        width: 256
-        height: 256
+        x: 582
+        y: 542
+        width: 112
+        height: 196
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -280,20 +322,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a7afc1aefe506f94eb7ae17fc4eacf96
-      internalID: 21300012
+      spriteID: 72ff0740b5973c1418436437e3535879
+      internalID: -6499725334327983887
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: NPC3 (1)_7
+      name: Maria 2_7
       rect:
         serializedVersion: 2
-        x: 768
-        y: 512
-        width: 256
-        height: 256
+        x: 842
+        y: 546
+        width: 112
+        height: 192
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -301,20 +343,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 642609fbc1ac07b4f9535ee86af1e476
-      internalID: 21300014
+      spriteID: dae0c43f9933e0c4ab7d46331a948ec8
+      internalID: -7810707130393468736
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: NPC3 (1)_8
+      name: Maria 2_8
       rect:
         serializedVersion: 2
-        x: 0
-        y: 256
-        width: 256
-        height: 256
+        x: 70
+        y: 294
+        width: 116
+        height: 192
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -322,20 +364,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dbff4544e235ff4459cff1811745b45b
-      internalID: 21300016
+      spriteID: c529ddb9486b6a040a6badef67fae949
+      internalID: -4881643179185963708
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: NPC3 (1)_9
+      name: Maria 2_9
       rect:
         serializedVersion: 2
-        x: 256
-        y: 256
-        width: 256
-        height: 256
+        x: 326
+        y: 298
+        width: 116
+        height: 188
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -343,20 +385,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 674d9156b32ddd740b101a67d0c2bafe
-      internalID: 21300018
+      spriteID: b24be7351c8276042ad2533195071605
+      internalID: -5795927295136704038
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: NPC3 (1)_10
+      name: Maria 2_10
       rect:
         serializedVersion: 2
-        x: 512
-        y: 256
-        width: 256
-        height: 256
+        x: 582
+        y: 294
+        width: 116
+        height: 192
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -364,20 +406,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6db541d0147ec5e4d815a72ddcc0d167
-      internalID: 21300020
+      spriteID: 251292325388b7a409d9f329de343d63
+      internalID: -6760307293621995737
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: NPC3 (1)_11
+      name: Maria 2_11
       rect:
         serializedVersion: 2
-        x: 768
-        y: 256
-        width: 256
-        height: 256
+        x: 838
+        y: 294
+        width: 116
+        height: 192
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -385,20 +427,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 23884324c42df964a95f55c1c312777d
-      internalID: 21300022
+      spriteID: e97abfa8c48dd26478f0ef9fe1d9f99b
+      internalID: 7433485516786678184
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: NPC3 (1)_12
+      name: Maria 2_12
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 256
-        height: 256
+        x: 70
+        y: 42
+        width: 116
+        height: 188
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -406,20 +448,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 468b7618fb4cc814cb1ec08cfdade78b
-      internalID: 21300024
+      spriteID: 5c2ed3bbd4465994ab711871618400ba
+      internalID: 758870478841811627
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: NPC3 (1)_13
+      name: Maria 2_13
       rect:
         serializedVersion: 2
-        x: 256
-        y: 0
-        width: 256
-        height: 256
+        x: 326
+        y: 38
+        width: 116
+        height: 192
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -427,8 +469,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3fddc4532990e374f9e6922f71c08506
-      internalID: 21300026
+      spriteID: 24edef6a8fa910641b9304b45d9159ac
+      internalID: -4532451077063745984
       vertices: []
       indices: 
       edges: []

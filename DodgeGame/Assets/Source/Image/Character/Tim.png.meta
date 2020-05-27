@@ -50,6 +50,54 @@ TextureImporter:
   - first:
       213: 21300030
     second: Heroe (2)_15
+  - first:
+      213: 6582772551739090713
+    second: Tim_0
+  - first:
+      213: 5845092308078675863
+    second: Tim_1
+  - first:
+      213: 927798065979021974
+    second: Tim_2
+  - first:
+      213: 5304816828257827700
+    second: Tim_3
+  - first:
+      213: 1567403875091036362
+    second: Tim_4
+  - first:
+      213: -2087970505432677235
+    second: Tim_5
+  - first:
+      213: 411443339071881871
+    second: Tim_6
+  - first:
+      213: 3087718716291757798
+    second: Tim_7
+  - first:
+      213: 9218470002929592087
+    second: Tim_8
+  - first:
+      213: -6176487101308222209
+    second: Tim_9
+  - first:
+      213: -8180963355082943666
+    second: Tim_10
+  - first:
+      213: 3228531271831452676
+    second: Tim_11
+  - first:
+      213: -277535889655133240
+    second: Tim_12
+  - first:
+      213: -3873412743475365263
+    second: Tim_13
+  - first:
+      213: -8514877639761874084
+    second: Tim_14
+  - first:
+      213: -5369679999589354450
+    second: Tim_15
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -108,7 +156,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 1024
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -120,7 +168,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Standalone
-    maxTextureSize: 2048
+    maxTextureSize: 1024
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -132,7 +180,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Android
-    maxTextureSize: 2048
+    maxTextureSize: 1024
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -146,13 +194,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Heroe (2)_0
+      name: Tim_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 768
-        width: 256
-        height: 256
+        x: 79
+        y: 795
+        width: 98
+        height: 202
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -160,20 +208,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 246eb70989d73a94da00e0fba644fd51
-      internalID: 21300000
+      spriteID: 200c73c1628acd94a904c06695c2fac4
+      internalID: 6582772551739090713
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Heroe (2)_1
+      name: Tim_1
       rect:
         serializedVersion: 2
-        x: 256
-        y: 768
-        width: 256
-        height: 256
+        x: 335
+        y: 799
+        width: 98
+        height: 198
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -181,20 +229,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 77772efa361ec2844bf888e3a3ed69f1
-      internalID: 21300002
+      spriteID: 80b88617dc0d26846bbedcf73cb48e63
+      internalID: 5845092308078675863
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Heroe (2)_2
+      name: Tim_2
       rect:
         serializedVersion: 2
-        x: 512
-        y: 768
-        width: 256
-        height: 256
+        x: 591
+        y: 795
+        width: 98
+        height: 202
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -202,20 +250,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bc3c4635c30d4e149a2e1277e4ac10c1
-      internalID: 21300004
+      spriteID: fc0ea5971cfd13c47b7ae7b1b272a798
+      internalID: 927798065979021974
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Heroe (2)_3
+      name: Tim_3
       rect:
         serializedVersion: 2
-        x: 768
-        y: 768
-        width: 256
-        height: 256
+        x: 847
+        y: 799
+        width: 98
+        height: 198
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -223,20 +271,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 48023067d69af1941ab4ffa067a00219
-      internalID: 21300006
+      spriteID: bbadae66cc9648246be8c336a52a24a9
+      internalID: 5304816828257827700
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Heroe (2)_4
+      name: Tim_4
       rect:
         serializedVersion: 2
-        x: 0
-        y: 512
-        width: 256
-        height: 256
+        x: 79
+        y: 539
+        width: 98
+        height: 202
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -244,20 +292,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cd3040c0f307c3243aab2ac624595fb0
-      internalID: 21300008
+      spriteID: 1fda4d3cdfe3ee741a6c88253cba1d6d
+      internalID: 1567403875091036362
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Heroe (2)_5
+      name: Tim_5
       rect:
         serializedVersion: 2
-        x: 256
-        y: 512
-        width: 256
-        height: 256
+        x: 335
+        y: 543
+        width: 98
+        height: 198
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -265,20 +313,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d16b1f10c316f76408dedebe2a7cde39
-      internalID: 21300010
+      spriteID: 51682ac6cec231e4c88a2c6c2b9180c1
+      internalID: -2087970505432677235
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Heroe (2)_6
+      name: Tim_6
       rect:
         serializedVersion: 2
-        x: 512
-        y: 512
-        width: 256
-        height: 256
+        x: 591
+        y: 539
+        width: 98
+        height: 202
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -286,20 +334,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f62504225585dbc4d909eba0544e6888
-      internalID: 21300012
+      spriteID: b4cf77fb85375fe459af429335c76e27
+      internalID: 411443339071881871
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Heroe (2)_7
+      name: Tim_7
       rect:
         serializedVersion: 2
-        x: 768
-        y: 512
-        width: 256
-        height: 256
+        x: 847
+        y: 543
+        width: 98
+        height: 198
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -307,20 +355,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8cfd4b448b98bb44cb0fda7719e88c86
-      internalID: 21300014
+      spriteID: 66146611e76ed3e4ea0e420367f751df
+      internalID: 3087718716291757798
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Heroe (2)_8
+      name: Tim_8
       rect:
         serializedVersion: 2
-        x: 0
-        y: 256
-        width: 256
-        height: 256
+        x: 67
+        y: 291
+        width: 106
+        height: 198
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -328,20 +376,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5fa533658213b5d408484d9aba83c982
-      internalID: 21300016
+      spriteID: 6f4d29485d71c4245968c94f4792a869
+      internalID: 9218470002929592087
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Heroe (2)_9
+      name: Tim_9
       rect:
         serializedVersion: 2
-        x: 256
-        y: 256
-        width: 256
-        height: 256
+        x: 323
+        y: 295
+        width: 106
+        height: 194
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -349,20 +397,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 683b2882cb149944a8535cdeea07d02f
-      internalID: 21300018
+      spriteID: d2c49fe7a3d845448acc2eaf9d8e6836
+      internalID: -6176487101308222209
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Heroe (2)_10
+      name: Tim_10
       rect:
         serializedVersion: 2
-        x: 512
-        y: 256
-        width: 256
-        height: 256
+        x: 579
+        y: 291
+        width: 106
+        height: 198
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -370,20 +418,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 055702d9c0c79714ab0b690317702407
-      internalID: 21300020
+      spriteID: c78b64ad10f64334eb5f54ca2a6c7a8c
+      internalID: -8180963355082943666
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Heroe (2)_11
+      name: Tim_11
       rect:
         serializedVersion: 2
-        x: 768
-        y: 256
-        width: 256
-        height: 256
+        x: 835
+        y: 295
+        width: 106
+        height: 194
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -391,20 +439,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f1577091781a55048b31573e70535872
-      internalID: 21300022
+      spriteID: 80f66bdc9d213b0479fb47908366310f
+      internalID: 3228531271831452676
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Heroe (2)_12
+      name: Tim_12
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 256
-        height: 256
+        x: 83
+        y: 35
+        width: 106
+        height: 198
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -412,20 +460,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5f6e221c0d7c3cf429b722aee3db2c96
-      internalID: 21300024
+      spriteID: c05ae9d97fa021144b01791ec2aefeb1
+      internalID: -277535889655133240
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Heroe (2)_13
+      name: Tim_13
       rect:
         serializedVersion: 2
-        x: 256
-        y: 0
-        width: 256
-        height: 256
+        x: 339
+        y: 39
+        width: 106
+        height: 194
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -433,20 +481,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9bbc49771332b924fac4a9bdfb830cdd
-      internalID: 21300026
+      spriteID: ab36dc7becb5ee745850426b7063f4ff
+      internalID: -3873412743475365263
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Heroe (2)_14
+      name: Tim_14
       rect:
         serializedVersion: 2
-        x: 512
-        y: 0
-        width: 256
-        height: 256
+        x: 595
+        y: 35
+        width: 106
+        height: 198
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -454,20 +502,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c9f14a53a1a57ee4d87dfcd70016bd89
-      internalID: 21300028
+      spriteID: e2dc957fb53987f4f99ff4a042c9368c
+      internalID: -8514877639761874084
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Heroe (2)_15
+      name: Tim_15
       rect:
         serializedVersion: 2
-        x: 768
-        y: 0
-        width: 256
-        height: 256
+        x: 851
+        y: 39
+        width: 106
+        height: 194
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -475,8 +523,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 17ebc317ca231304db4940b3827178d8
-      internalID: 21300030
+      spriteID: 8bc0e5cb00cb084419e51a72710f940a
+      internalID: -5369679999589354450
       vertices: []
       indices: 
       edges: []
