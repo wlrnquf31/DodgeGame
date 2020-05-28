@@ -32,15 +32,21 @@ public class DataManager : MonoBehaviour
     }
 
     //데이터 저장 및 파일을 생성하는 함수.
+    
     public void Save(GameData gameData)
     {
-        BinaryFormatter bf = new BinaryFormatter();
-        FileStream file = File.Create(dataPath);
+        try
+        {
+            BinaryFormatter bf = new BinaryFormatter();
+            FileStream file = File.Create(dataPath);
 
-        bf.Serialize(file, gameData);
-        file.Close();
-
-        //GameData data = new GameData();
+            bf.Serialize(file, gameData);
+            file.Close();
+        }
+        catch (IOException e)
+        {
+            Debug.LogError(e);
+        }
     }
 
     //파일에 저장된 데이터를 리턴해주는 함수.

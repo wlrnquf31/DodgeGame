@@ -21,7 +21,7 @@ namespace DataInfo
 
         public int[] keepBoost = new int[4] {0, 0, 0, 0 };
 
-        public Sprite currentSkin;
+        public int curSkinIndex = 0;
 
         public float bgmVolume = 0.5f;
 

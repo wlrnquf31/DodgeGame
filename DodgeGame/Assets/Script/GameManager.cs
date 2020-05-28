@@ -22,6 +22,7 @@ public class GameManager : MonoBehaviour
     private GameData data = new GameData();
 
     public Player player;
+
     public Sprite skin;
 
     public GameObject cash;
@@ -63,7 +64,8 @@ public class GameManager : MonoBehaviour
 
     private void OnApplicationQuit()
     {
-        DataManager.instance.Save(DataManager.instance.Load());
+        data = DataManager.instance.Load();
+        DataManager.instance.Save(data);
     }
 
     public void ShieldHit()
@@ -113,7 +115,6 @@ public class GameManager : MonoBehaviour
     {
         if(SceneManager.GetActiveScene().name.Equals("GameScene"))
         {
-            player.GetComponent<SpriteRenderer>().sprite = skin;
             Time.timeScale = 1;
             player.Hp = 2;
             score = 0;

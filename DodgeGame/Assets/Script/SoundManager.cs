@@ -52,8 +52,10 @@ public class SoundManager : MonoBehaviour
 
     private void InitSlider()
     {
-        effectSlider.value = DataManager.instance.Load().effectVolume;
-        bgmSlider.value = DataManager.instance.Load().bgmVolume;
+        data = DataManager.instance.Load();
+
+        effectSlider.value = data.effectVolume;
+        bgmSlider.value = data.bgmVolume;
     }
 
     private void InitBgm()

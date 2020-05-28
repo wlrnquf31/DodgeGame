@@ -26,17 +26,19 @@ public class StatusUpgrade : MonoBehaviour
 
     public void InitInfoData()
     {
+        data = DataManager.instance.Load();
+
         upgradeInfo = new string[,]{
-            { "플레이어의 이동속도를 높힐 수 있습니다.\n 현재 속도 : " + DataManager.instance.Load().speed, "2500" },
-            { "실드의 움직이는 속도를 높힐 수 있습니다.\n 현재 속도 : " + DataManager.instance.Load().shieldSpeed, "2500" },
-            { "HP회복 아이템의 드롭 확률을 높힐 수 있습니다.\n 현재 확률 : " + DataManager.instance.Load().hpCureDrop * 100 + "%", "2500" }
+            { "플레이어의 이동속도를 높힐 수 있습니다.\n 현재 속도 : " + data.speed, "2500" },
+            { "실드의 움직이는 속도를 높힐 수 있습니다.\n 현재 속도 : " + data.shieldSpeed, "2500" },
+            { "HP회복 아이템의 드롭 확률을 높힐 수 있습니다.\n 현재 확률 : " + data.hpCureDrop * 100 + "%", "2500" }
         };
 
         boostInfo = new string[,] {
-            { "30초간 가드시 스코어 획득량 2배.\n 보유 : " + DataManager.instance.Load().keepBoost[0], "1500" },
-            { "10초간 무적.\n 보유 : " + DataManager.instance.Load().keepBoost[1], "2000" },
-            { "1회 피격 무시.\n 보유 : " + DataManager.instance.Load().keepBoost[2], "1500" },
-            { "게임 끝날 시 획득한 코인 2배.\n 보유 : " + DataManager.instance.Load().keepBoost[3], "2500" }
+            { "30초간 가드시 스코어 획득량 2배.\n 보유 : " + data.keepBoost[0], "1500" },
+            { "10초간 무적.\n 보유 : " + data.keepBoost[1], "2000" },
+            { "1회 피격 무시.\n 보유 : " + data.keepBoost[2], "1500" },
+            { "게임 끝날 시 획득한 코인 2배.\n 보유 : " + data.keepBoost[3], "2500" }
         };
     }
 
