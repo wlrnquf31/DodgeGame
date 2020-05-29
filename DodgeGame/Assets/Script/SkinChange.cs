@@ -13,10 +13,6 @@ public class SkinChange : MonoBehaviour
     [System.NonSerialized]
     public Sprite skin;
 
-    public GameObject prac;
-
-    public GameObject Content;
-
     private GameObject curSelectSkin;
 
     private GameData data = new GameData();
@@ -25,17 +21,6 @@ public class SkinChange : MonoBehaviour
     {
         SkinInit();
         ShowCharacterBoard();
-        
-        Init();
-    }
-
-    private void Init()
-    {
-        for (int i = 0; i < 10; i++)
-        {
-            GameObject index = Instantiate(prac, new Vector3(0, 0, 0), Quaternion.identity);
-            index.transform.SetParent(Content.transform);
-        }
     }
 
     public void ClickSkin()
@@ -45,7 +30,7 @@ public class SkinChange : MonoBehaviour
 
     public void ChangeSkin()
     {
-        skin = curSelectSkin.GetComponent<Sprite>();
+        skin = curSelectSkin.GetComponentInChildren<Image>().sprite;
         ShowCharacterBoard();
     }
 
@@ -61,6 +46,6 @@ public class SkinChange : MonoBehaviour
 
         skin = skins[data.curSkinIndex];
 
-        GameManager.instance.skin = skin;
+        //GameManager.instance.skin = skin;
     }
 }
