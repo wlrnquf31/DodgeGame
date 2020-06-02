@@ -827,8 +827,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2039193043}
-        m_MethodName: GameExit
+      - m_Target: {fileID: 864857761}
+        m_MethodName: ExitBtn
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1102,8 +1102,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2039193043}
-        m_MethodName: GoToMain
+      - m_Target: {fileID: 864857761}
+        m_MethodName: GoMainSceneBtn
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1591,7 +1591,10 @@ MonoBehaviour:
   stopMenu: {fileID: 0}
   overMenu: {fileID: 0}
   optionMenu: {fileID: 808512268}
+  changeMenu: {fileID: 0}
   scoreText: {fileID: 0}
+  cashText: {fileID: 0}
+  gettingCashText: {fileID: 0}
 --- !u!4 &864857762
 Transform:
   m_ObjectHideFlags: 0
@@ -2843,8 +2846,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e78f6755e6e6164986f031f47c9efc1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
+  player: {fileID: 2872897692077757504, guid: 99123c8c652319f4f97c64d62a3fec3f, type: 3}
+  skin: {fileID: 0}
+  cash: {fileID: 9063858940002249831, guid: 5457c2a29e278714e85a498c7d5e6497, type: 3}
   score: 0
+  gettingCash: 0
 --- !u!4 &2039193044
 Transform:
   m_ObjectHideFlags: 0

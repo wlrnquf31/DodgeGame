@@ -30,9 +30,12 @@ public class GameManager : MonoBehaviour
     public int score;
 
     public int gettingCash;
+
     private readonly int addCash = 100;
 
     private bool isStop = false;
+
+    private Coroutine cashCoroutine;
 
     private void Awake()
     {
@@ -44,11 +47,7 @@ public class GameManager : MonoBehaviour
         {
             Destroy(gameObject);
         }
-    }
-
-    private void Start()
-    {
-        GameInit();
+        DontDestroyOnLoad(gameObject);
     }
 
     private void OnApplicationPause(bool pause)
@@ -60,6 +59,16 @@ public class GameManager : MonoBehaviour
                 GamePlayToggle();
             }
         }
+    }
+
+    private void Start()
+    {
+        SceneManager.sceneLoaded += OnSceneLoaded;
+    }
+
+    private void OnDisable()
+    {
+        SceneManager.sceneLoaded -= OnSceneLoaded;
     }
 
     private void OnApplicationQuit()
@@ -113,21 +122,22 @@ public class GameManager : MonoBehaviour
 
     public void GameInit()
     {
-        if(SceneManager.GetActiveScene().name.Equals("GameScene"))
+        Time.timeScale = 1;
+        score = 0;
+        cashCoroutine = StartCoroutine(SpawnCash());
+    }
+
+    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        if(scene.name.Equals("GameScene"))
         {
-            Time.timeScale = 1;
-            player.Hp = 2;
-            score = 0;
-            StartCoroutine(SpawnCash());
-        }
-        else if(SceneManager.GetActiveScene().name.Equals("MainScene"))
-        {
-            UiManager.instance.SetCashText();
+            GameInit();
         }
     }
 
-    public void GameOver()
+    private void GameOver()
     {
+        StopCoroutine(cashCoroutine);
         Time.timeScale = 0;
         FinishDataSave();
         UiManager.instance.OverUiController();
@@ -141,6 +151,13 @@ public class GameManager : MonoBehaviour
     public void GameStart()
     {
         SceneManager.LoadScene("GameScene");
+        //SceneLoadManager.LoadScene("GameScene");
+        //GameInit();
+    }
+
+    public void GameReStart()
+    {
+        GameInit();
     }
 
     public void GoToMain()
@@ -166,27 +183,25 @@ public class GameManager : MonoBehaviour
 
     private void FinishDataSave()
     {
-        data = DataManager.instance.Load();
+        GameData saveData = DataManager.instance.Load();
 
-        DataUpdateCash();
-        DataUpdateHighScore();
+        DataUpdateCash(ref saveData);
+        DataUpdateHighScore(ref saveData);
 
-        DataManager.instance.Save(data);
+        DataManager.instance.Save(saveData);
     }
 
-    private void DataUpdateCash()
+    private void DataUpdateCash(ref GameData saveData)
     {
-        data.cash += gettingCash;
-
+        saveData.cash += gettingCash;
     }
 
-    private void DataUpdateHighScore( )
+    private void DataUpdateHighScore(ref GameData saveData)
     {
         if (score > data.highScore)
         {
-            data.highScore = score;
+            saveData.highScore = score;
         }
-
     }
 
 }

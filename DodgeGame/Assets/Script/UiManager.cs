@@ -36,6 +36,14 @@ public class UiManager : MonoBehaviour
         }
     }
 
+    private void Start()
+    {
+        if (SceneManager.GetActiveScene().name.Equals("MainScene"))
+        {
+            SetCashText();
+        }
+    }
+
     public void HpUiController()
     {
         if (hpMenu != null)
@@ -89,5 +97,20 @@ public class UiManager : MonoBehaviour
     public void SetGettingCashText()
     {
         gettingCashText.text = GameManager.instance.gettingCash.ToString();
+    }
+
+    public void GoGameSceneBtn()
+    {
+        GameManager.instance.GameStart();
+    }
+
+    public void GoMainSceneBtn()
+    {
+        GameManager.instance.GoToMain();
+    }
+
+    public void ExitBtn()
+    {
+        GameManager.instance.GameExit();
     }
 }

@@ -780,7 +780,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1652352494}
+      - m_Target: {fileID: 1895385201}
         m_MethodName: OptionUiController
         m_Mode: 1
         m_Arguments:
@@ -1302,6 +1302,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 2872897692077757507, guid: 99123c8c652319f4f97c64d62a3fec3f,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2872897692077757505, guid: 99123c8c652319f4f97c64d62a3fec3f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1357,10 +1362,56 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2872897692077757505, guid: 99123c8c652319f4f97c64d62a3fec3f,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 2872897692077757505, guid: 99123c8c652319f4f97c64d62a3fec3f,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 2872897692077757506, guid: 99123c8c652319f4f97c64d62a3fec3f,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -6884585620009703217, guid: c0f93968069debe45a315e278ad35e10,
+        type: 3}
     - target: {fileID: 2556393973512961768, guid: 99123c8c652319f4f97c64d62a3fec3f,
         type: 3}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2556393973512961768, guid: 99123c8c652319f4f97c64d62a3fec3f,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2556393973512961768, guid: 99123c8c652319f4f97c64d62a3fec3f,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 12.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2556393973512961768, guid: 99123c8c652319f4f97c64d62a3fec3f,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2872897691240747092, guid: 99123c8c652319f4f97c64d62a3fec3f,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2872897691240747092, guid: 99123c8c652319f4f97c64d62a3fec3f,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2872897691240747092, guid: 99123c8c652319f4f97c64d62a3fec3f,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 99123c8c652319f4f97c64d62a3fec3f, type: 3}
@@ -1596,8 +1647,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1231749150}
-        m_MethodName: GoToMain
+      - m_Target: {fileID: 1895385201}
+        m_MethodName: GoMainSceneBtn
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2111,8 +2162,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1231749150}
-        m_MethodName: GameStart
+      - m_Target: {fileID: 1895385201}
+        m_MethodName: GoGameSceneBtn
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2580,6 +2631,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 19081644}
+  skin: {fileID: 0}
   cash: {fileID: 9063858940002249831, guid: 5457c2a29e278714e85a498c7d5e6497, type: 3}
   score: 0
   gettingCash: 0
@@ -5157,7 +5209,6 @@ GameObject:
   - component: {fileID: 1652352492}
   - component: {fileID: 1652352491}
   - component: {fileID: 1652352490}
-  - component: {fileID: 1652352494}
   m_Layer: 5
   m_Name: UiCanvas
   m_TagString: Untagged
@@ -5249,25 +5300,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!114 &1652352494
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1652352489}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5670c0e69d68caa4c9cfeeceb41fc2a6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hpMenu: {fileID: 1594325912}
-  stopMenu: {fileID: 1879581421}
-  overMenu: {fileID: 1508524832}
-  optionMenu: {fileID: 578441720}
-  scoreText: {fileID: 908150636}
-  cashText: {fileID: 0}
-  gettingCashText: {fileID: 738510985}
 --- !u!1 &1710695233
 GameObject:
   m_ObjectHideFlags: 0
@@ -5397,6 +5429,57 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1879581421}
   m_CullTransparentMesh: 0
+--- !u!1 &1895385199
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1895385200}
+  - component: {fileID: 1895385201}
+  m_Layer: 0
+  m_Name: UiManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1895385200
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1895385199}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.21885154, y: -1.198614, z: 287.27747}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1895385201
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1895385199}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5670c0e69d68caa4c9cfeeceb41fc2a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hpMenu: {fileID: 1594325912}
+  stopMenu: {fileID: 1879581421}
+  overMenu: {fileID: 1508524832}
+  optionMenu: {fileID: 578441720}
+  changeMenu: {fileID: 0}
+  scoreText: {fileID: 908150636}
+  cashText: {fileID: 0}
+  gettingCashText: {fileID: 738510985}
 --- !u!1 &1907457965
 GameObject:
   m_ObjectHideFlags: 0
@@ -5636,8 +5719,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1231749150}
-        m_MethodName: GamePlayToggle
+      - m_Target: {fileID: 1895385201}
+        m_MethodName: GoGameSceneBtn
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5765,8 +5848,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1231749150}
-        m_MethodName: GoToMain
+      - m_Target: {fileID: 1895385201}
+        m_MethodName: GoMainSceneBtn
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6003,7 +6086,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1652352494}
+      - m_Target: {fileID: 1895385201}
         m_MethodName: OptionUiController
         m_Mode: 1
         m_Arguments:

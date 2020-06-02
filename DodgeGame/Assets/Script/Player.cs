@@ -39,7 +39,15 @@ public class Player : MonoBehaviour
 
     private void Start()
     {
+        Init();
         data = DataManager.instance.Load();
+    }
+
+    public void Init()
+    {
+        Hp = 2;
+        GetComponent<SpriteRenderer>().sprite = GameManager.instance.skin;
+        GameManager.instance.player = this;
     }
 
     private void playerMove()
