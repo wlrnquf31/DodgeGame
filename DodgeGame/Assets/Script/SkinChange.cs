@@ -27,8 +27,14 @@ public class SkinChange : MonoBehaviour
 
     public void ChangeSkin()
     {
+        data = DataManager.instance.Load();
+        data.curSkinIndex = int.Parse(curSelectSkin.name);
+
+        UiManager.instance.SkinChangeUiController();
         GameManager.instance.skin = curSelectSkin.transform.GetChild(0).GetComponent<Image>().sprite;
         ShowCharacterBoard();
+
+        DataManager.instance.Save(data);
     }
 
     private void ShowCharacterBoard()

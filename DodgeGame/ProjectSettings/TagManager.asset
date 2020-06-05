@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Shield
   - Cash
+  - Bullet
   layers:
   - Default
   - TransparentFX

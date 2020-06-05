@@ -2846,7 +2846,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e78f6755e6e6164986f031f47c9efc1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 2872897692077757504, guid: 99123c8c652319f4f97c64d62a3fec3f, type: 3}
+  player: {fileID: 0}
   skin: {fileID: 0}
   cash: {fileID: 9063858940002249831, guid: 5457c2a29e278714e85a498c7d5e6497, type: 3}
   score: 0

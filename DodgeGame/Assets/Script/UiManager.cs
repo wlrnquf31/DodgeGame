@@ -109,6 +109,16 @@ public class UiManager : MonoBehaviour
         GameManager.instance.GoToMain();
     }
 
+    public void GameRestartBtn()
+    {
+        GameManager.instance.GameReStart();
+    }
+
+    public void BackToMainBtn()
+    {
+        GameManager.instance.BackToMain();
+    }
+
     public void ExitBtn()
     {
         GameManager.instance.GameExit();

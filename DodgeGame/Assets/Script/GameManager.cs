@@ -6,14 +6,6 @@ using UnityEngine.SceneManagement;
 using JetBrains.Annotations;
 using DataInfo;
 
-//public enum GameState
-//{
-//    main,
-//    inGame,
-//    gameStop,
-//    gameOver
-//}
-
 public class GameManager : MonoBehaviour
 {
 
@@ -34,6 +26,8 @@ public class GameManager : MonoBehaviour
     private readonly int addCash = 100;
 
     private bool isStop = false;
+
+    private bool isTwiceCoin = false;
 
     private Coroutine cashCoroutine;
 
@@ -77,23 +71,10 @@ public class GameManager : MonoBehaviour
         DataManager.instance.Save(data);
     }
 
-    public void ShieldHit()
+    public void ScoreUp()
     {
         score += DataManager.instance.Load().addScore;
         UiManager.instance.SetScoreText(score);
-        SoundManager.instance.PlayHitShieldSound();
-    }
-
-    public void PlayerHit()
-    {
-        player.Hp -= 1;
-        UiManager.instance.HpUiController();
-        SoundManager.instance.PlayHitCharacterSound();
-        if (player.Hp < 1)
-        {
-            GameOver();
-            SoundManager.instance.BGMToggle();
-        }
     }
 
     public void CashHit()
@@ -122,9 +103,63 @@ public class GameManager : MonoBehaviour
 
     public void GameInit()
     {
+        int[] usedBoost = new int[4] { 1, 1, 1, 1 };
+
+        if(player == null)
+        {
+            player = GameObject.Find("Player").GetComponent<Player>();
+        }
         Time.timeScale = 1;
+        gettingCash = 0;
         score = 0;
+        UseBoost(usedBoost);
         cashCoroutine = StartCoroutine(SpawnCash());
+    }
+
+    private void UseBoost(int[] usedBoost)
+    {
+        data = DataManager.instance.Load();
+
+        for(int i = 0; i < data.keepBoost.Length; i++)
+        {
+            if(usedBoost[i] != 0 && data.keepBoost[i] != 0)
+            {
+                data.keepBoost[i]--;
+                DataManager.instance.Save(data);
+                StartCoroutine(ApplyBoost(i));
+            }
+        }
+    }
+
+    IEnumerator ApplyBoost(int boostIndex)
+    {
+        if(boostIndex.Equals(0))
+        {
+            GameData data = DataManager.instance.Load();
+
+            data.addScore *= 2;
+            DataManager.instance.Save(data);
+
+            yield return new WaitForSeconds(30f);
+
+            data.addScore /= 2;
+            DataManager.instance.Save(data);
+        }
+        else if(boostIndex.Equals(1))
+        {
+            player.isGodMode = true;
+            yield return new WaitForSeconds(10f);
+            player.isGodMode = false;
+        }
+        else if(boostIndex.Equals(2))
+        {
+            player.isOneIgnore = true;
+        }
+        else if(boostIndex.Equals(3))
+        {
+            isTwiceCoin = true;
+        }
+        
     }
 
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
@@ -135,12 +170,30 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    private void GameOver()
+    public void GameOver()
     {
-        StopCoroutine(cashCoroutine);
-        Time.timeScale = 0;
-        FinishDataSave();
         UiManager.instance.OverUiController();
+        Time.timeScale = 0;
+    }
+
+    public void GameFinish()
+    {
+        FinishDataSave();
+        StopCoroutine(cashCoroutine);
+        SoundManager.instance.BGMToggle();
+    }
+
+    public void GameReStart()
+    {
+        GameFinish();
+        GameStart();
+        //GameInit();
+    }
+
+    public void BackToMain()
+    {
+        GameFinish();
+        GoToMain();
     }
 
     public void GameExit()
@@ -152,12 +205,6 @@ public class GameManager : MonoBehaviour
     {
         SceneManager.LoadScene("GameScene");
         //SceneLoadManager.LoadScene("GameScene");
-        //GameInit();
-    }
-
-    public void GameReStart()
-    {
-        GameInit();
     }
 
     public void GoToMain()
@@ -193,7 +240,15 @@ public class GameManager : MonoBehaviour
 
     private void DataUpdateCash(ref GameData saveData)
     {
-        saveData.cash += gettingCash;
+        if(isTwiceCoin)
+        {
+            saveData.cash += (gettingCash * 2);
+            isTwiceCoin = false;
+        }
+        else
+        {
+            saveData.cash += gettingCash;
+        }
     }
 
     private void DataUpdateHighScore(ref GameData saveData)
