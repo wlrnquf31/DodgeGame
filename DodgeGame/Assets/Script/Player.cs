@@ -25,26 +25,33 @@ public class Player : MonoBehaviour
     }
     public bool isGodMode = false;
     public bool isOneIgnore = false;
+
     private GameData data = new GameData();
 
-    private float halfSizeX;
-    private float halfSizeY;
+    [SerializeField]
+    private Joystick joystick;
+
+    public float halfSizeX;
+    public float halfSizeY;
 
     void Update()
     {
-        playerMove();
+#if UNITY_ANDROID || UNITY_IOS
 
+#endif
+#if UNITY_STANDLONE || UNITY_EDITOR
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             //위치 바꿔야함
             GameManager.instance.GamePlayToggle();
         }
+#endif
+        playerMove();
     }
 
     private void Start()
     {
         Init();
-        data = DataManager.instance.Load();
     }
 
     public void Init()
@@ -52,10 +59,14 @@ public class Player : MonoBehaviour
         Hp = 2;
         GetComponent<SpriteRenderer>().sprite = GameManager.instance.skin;
 
+#if UNITY_ANDROID || UNITY_IOS
+        joystick.gameObject.SetActive(true);
+#endif
+
         halfSizeX = (GetComponent<SpriteRenderer>().sprite.rect.size.x * gameObject.transform.localScale.x) * 0.01f * 0.5f;
         halfSizeY = (GetComponent<SpriteRenderer>().sprite.rect.size.y * gameObject.transform.localScale.y) * 0.01f * 0.5f;
 
-        //GameManager.instance.player = this;
+        data = DataManager.instance.Load();
     }
 
     private void PlayerHit()
@@ -71,6 +82,18 @@ public class Player : MonoBehaviour
 
     private void playerMove()
     {
+#if UNITY_ANDROID || UNITY_IOS
+        if (joystick.Direction.x != 0)
+        {
+            transform.Translate(new Vector3(joystick.Direction.x * data.speed * Time.deltaTime, 0f, 0f));
+        }
+        if (joystick.Direction.y != 0)
+        {
+            transform.Translate(new Vector3(0f, joystick.Direction.y * data.speed * Time.deltaTime, 0f));
+        }
+#endif
+
+#if UNITY_STANDLONE || UNITY_EDITOR
         if (Input.GetAxisRaw("Horizontal") != 0)
         {
             transform.Translate(new Vector3(Input.GetAxisRaw("Horizontal") * data.speed * Time.deltaTime, 0f, 0f));
@@ -79,6 +102,7 @@ public class Player : MonoBehaviour
         {
             transform.Translate(new Vector3(0f, Input.GetAxisRaw("Vertical") * data.speed * Time.deltaTime, 0f));
         }
+#endif
 
         Vector3 pos = Camera.main.WorldToViewportPoint(transform.position);
 

@@ -218,8 +218,8 @@ public class GameManager : MonoBehaviour
         {
             yield return new WaitForSeconds(3.0f);
 
-            float randX = Random.Range(0, Screen.width);
-            float randY = Random.Range(0, Screen.height);
+            float randX = Random.Range(player.halfSizeX * 100 , Screen.width - (player.halfSizeX * 100));
+            float randY = Random.Range(player.halfSizeY * 100 , Screen.height - (player.halfSizeY * 100));
 
             Vector3 randPos = Camera.main.ScreenToWorldPoint(new Vector3(randX, randY, 10));
 
