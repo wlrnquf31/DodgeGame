@@ -33,6 +33,8 @@ public class GameManager : MonoBehaviour
 
     private void Awake()
     {
+        Screen.SetResolution(1024, 768, true);
+
         if(instance == null)
         {
             instance = this;
