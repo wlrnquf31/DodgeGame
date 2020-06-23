@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using DataInfo;
 
 public class UiManager : MonoBehaviour
 {
@@ -18,9 +19,13 @@ public class UiManager : MonoBehaviour
 
     public GameObject changeMenu;
 
+    public GameObject closeUi;
+
     public Text scoreText;
 
     public Text cashText;
+
+    public Text highScoreText;
 
     public Text gettingCashText;
 
@@ -41,6 +46,7 @@ public class UiManager : MonoBehaviour
         if (SceneManager.GetActiveScene().name.Equals("MainScene"))
         {
             SetCashText();
+            SetHighScoreText();
         }
     }
 
@@ -62,6 +68,24 @@ public class UiManager : MonoBehaviour
         }
     }
 
+    public void SetJoyStickPosition()
+    {
+        GameData data = DataManager.instance.Load();
+
+        bool isLeft = optionMenu.GetComponentInChildren<Toggle>().isOn;
+
+        if (isLeft)
+        {
+            data.joystickIsLeft = true;
+        }
+        else
+        {
+            data.joystickIsLeft = false;
+        }
+        Debug.Log(isLeft);
+        DataManager.instance.Save(data);
+    }
+
     public void OverUiController()
     {
         overMenu.SetActive(true);
@@ -71,12 +95,27 @@ public class UiManager : MonoBehaviour
 
     public void OptionUiController()
     {
-        optionMenu.SetActive(!optionMenu.activeInHierarchy);
+        if(optionMenu != null)
+        {
+            optionMenu.SetActive(!optionMenu.activeInHierarchy);
+            optionMenu.GetComponentInChildren<Toggle>().isOn = DataManager.instance.Load().joystickIsLeft;
+        }
+    }
+
+    public void CloseUiController()
+    {
+        if(closeUi != null)
+        {
+            closeUi.SetActive(!closeUi.activeInHierarchy);
+        }
     }
 
     public void SkinChangeUiController()
     {
-        changeMenu.SetActive(!changeMenu.activeInHierarchy);
+        if(changeMenu != null)
+        {
+            changeMenu.SetActive(!changeMenu.activeInHierarchy);
+        }
     }
 
     public void StopUiController(bool isStop)
@@ -92,6 +131,11 @@ public class UiManager : MonoBehaviour
     public void SetCashText()
     {
         cashText.text = DataManager.instance.Load().cash.ToString();
+    }
+
+    public void SetHighScoreText()
+    {
+        highScoreText.text = DataManager.instance.Load().highScore.ToString();
     }
 
     public void SetGettingCashText()

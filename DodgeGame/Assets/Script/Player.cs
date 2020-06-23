@@ -29,17 +29,16 @@ public class Player : MonoBehaviour
     private GameData data = new GameData();
 
     [SerializeField]
-    private Joystick joystick;
+    private Joystick joystick = null;
 
+    [System.NonSerialized]
     public float halfSizeX;
+    [System.NonSerialized]
     public float halfSizeY;
 
     void Update()
     {
-#if UNITY_ANDROID || UNITY_IOS
-
-#endif
-#if UNITY_STANDLONE || UNITY_EDITOR
+#if UNITY_STANDLONE || UNITY_EDITOR || UNITY_ANDROID
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             //위치 바꿔야함
@@ -56,11 +55,16 @@ public class Player : MonoBehaviour
 
     public void Init()
     {
-        Hp = 2;
+        Hp = 100;
         GetComponent<SpriteRenderer>().sprite = GameManager.instance.skin;
 
 #if UNITY_ANDROID || UNITY_IOS
         joystick.gameObject.SetActive(true);
+        if(DataManager.instance.Load().joystickIsLeft)
+        {
+            Vector3 reversePos = new Vector3(-(joystick.transform.position.x), joystick.transform.position.y, 0);
+            joystick.transform.position = reversePos;
+        }
 #endif
 
         halfSizeX = (GetComponent<SpriteRenderer>().sprite.rect.size.x * gameObject.transform.localScale.x) * 0.01f * 0.5f;
@@ -93,7 +97,7 @@ public class Player : MonoBehaviour
         }
 #endif
 
-#if UNITY_STANDLONE || UNITY_EDITOR
+#if UNITY_STANDALONE || UNITY_EDITOR
         if (Input.GetAxisRaw("Horizontal") != 0)
         {
             transform.Translate(new Vector3(Input.GetAxisRaw("Horizontal") * data.speed * Time.deltaTime, 0f, 0f));

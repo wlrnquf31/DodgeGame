@@ -33,7 +33,7 @@ public class GameManager : MonoBehaviour
 
     private void Awake()
     {
-        Screen.SetResolution(1024, 768, true);
+        Screen.SetResolution(1920, 1080, true);
 
         if(instance == null)
         {
@@ -66,11 +66,34 @@ public class GameManager : MonoBehaviour
     {
         SceneManager.sceneLoaded -= OnSceneLoaded;
     }
+    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        if (scene.name.Equals("GameScene"))
+        {
+            GameInit();
+        }
+        else if(scene.name.Equals("MainScene"))
+        {
+            StartCoroutine("CheckEscape");
+        }
+    }
 
     private void OnApplicationQuit()
     {
         data = DataManager.instance.Load();
         DataManager.instance.Save(data);
+    }
+
+    IEnumerator CheckEscape()
+    {
+        while(true)
+        {
+            if (Input.GetKeyDown(KeyCode.Escape))
+            {
+                UiManager.instance.CloseUiController();
+            }
+            yield return new WaitForFixedUpdate();
+        }
     }
 
     public void ScoreUp()
@@ -164,14 +187,6 @@ public class GameManager : MonoBehaviour
         
     }
 
-    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
-    {
-        if(scene.name.Equals("GameScene"))
-        {
-            GameInit();
-        }
-    }
-
     public void GameOver()
     {
         UiManager.instance.OverUiController();
@@ -206,7 +221,7 @@ public class GameManager : MonoBehaviour
     public void GameStart()
     {
         SceneManager.LoadScene("GameScene");
-        //SceneLoadManager.LoadScene("GameScene");
+        StopCoroutine("CheckEscape");
     }
 
     public void GoToMain()

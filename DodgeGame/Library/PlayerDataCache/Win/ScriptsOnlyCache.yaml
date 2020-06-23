@@ -479,7 +479,7 @@ ScriptsOnlyBuild:
     className: GameManager
   - hash:
       serializedVersion: 2
-      Hash: 8310db8341f91d15446def7a5b2d342c
+      Hash: 8dcf72ee46093c4e0284b827eb71067a
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Player
@@ -503,7 +503,7 @@ ScriptsOnlyBuild:
     className: ScrollRect
   - hash:
       serializedVersion: 2
-      Hash: fa9d544ceae6613803506f6ea38a1ea3
+      Hash: a68da81f0dd4e5e406770e7e4def0a5a
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: UiManager

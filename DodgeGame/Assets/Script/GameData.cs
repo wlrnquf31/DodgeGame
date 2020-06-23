@@ -11,7 +11,7 @@ namespace DataInfo
 
         public float shieldSpeed = 100;
 
-        public float hpCureDrop = 0.05f;
+        public float hpCureChance = 0.05f;
 
         public int cash = 0;
 
@@ -22,6 +22,8 @@ namespace DataInfo
         public int[] keepBoost = new int[4] {0, 0, 0, 0 };
 
         public int curSkinIndex = 0;
+
+        public bool joystickIsLeft = false;
 
         public float bgmVolume = 0.5f;
 
