@@ -82,7 +82,6 @@ public class UiManager : MonoBehaviour
         {
             data.joystickIsLeft = false;
         }
-        Debug.Log(isLeft);
         DataManager.instance.Save(data);
     }
 

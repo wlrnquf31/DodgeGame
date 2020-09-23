@@ -44,7 +44,7 @@ public class Shield : MonoBehaviour
         if (collision.CompareTag("Bullet"))
         {
             ShieldHit();
-            Destroy(collision.gameObject);
+            collision.GetComponent<Bullet>().ReturnThis();
         }
     }
 }

@@ -29,6 +29,8 @@ public class GameManager : MonoBehaviour
 
     private bool isTwiceCoin = false;
 
+    private bool isTwiceScore = false;
+
     private Coroutine cashCoroutine;
 
     private void Awake()
@@ -98,7 +100,14 @@ public class GameManager : MonoBehaviour
 
     public void ScoreUp()
     {
-        score += DataManager.instance.Load().addScore;
+        if(isTwiceScore)
+        {
+            score += DataManager.instance.Load().addScore * 2;
+        }
+        else
+        {
+            score += DataManager.instance.Load().addScore;
+        }
         UiManager.instance.SetScoreText(score);
     }
 
@@ -137,6 +146,8 @@ public class GameManager : MonoBehaviour
         Time.timeScale = 1;
         gettingCash = 0;
         score = 0;
+        isTwiceScore = false;
+        isTwiceCoin = false;
         UseBoost(usedBoost);
         cashCoroutine = StartCoroutine(SpawnCash());
     }
@@ -160,15 +171,9 @@ public class GameManager : MonoBehaviour
     {
         if(boostIndex.Equals(0))
         {
-            GameData data = DataManager.instance.Load();
-
-            data.addScore *= 2;
-            DataManager.instance.Save(data);
-
+            isTwiceScore = true;
             yield return new WaitForSeconds(30f);
-
-            data.addScore /= 2;
-            DataManager.instance.Save(data);
+            isTwiceScore = false;
         }
         else if(boostIndex.Equals(1))
         {

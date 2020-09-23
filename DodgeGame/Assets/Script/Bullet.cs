@@ -4,14 +4,31 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
-    private void Start()
+    //private void OnEnable()
+    //{
+    //    StartCoroutine(ReturnBullet());
+    //}
+
+    //private void OnDisable()
+    //{
+    //    StopAllCoroutines();
+    //}
+    //IEnumerator ReturnBullet()
+    //{
+    //    yield return new WaitForSeconds(5f);
+    //    ObjectPool.instance.ReturnObject(this);
+    //}
+
+    private void OnTriggerExit2D(Collider2D collision)
     {
-        StartCoroutine("destoryBullet");
+        if (collision.CompareTag("BackGround"))
+        {
+            ReturnThis();
+        }
     }
 
-    IEnumerator destoryBullet()
+    public void ReturnThis()
     {
-        yield return new WaitForSeconds(5f);
-        Destroy(gameObject);
+        ObjectPool.instance.ReturnObject(gameObject);
     }
 }

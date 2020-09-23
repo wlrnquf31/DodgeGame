@@ -55,7 +55,7 @@ public class Player : MonoBehaviour
 
     public void Init()
     {
-        Hp = 100;
+        Hp = 2;
         GetComponent<SpriteRenderer>().sprite = GameManager.instance.skin;
 
 #if UNITY_ANDROID || UNITY_IOS

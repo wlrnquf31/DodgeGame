@@ -7,6 +7,7 @@ TagManager:
   - Shield
   - Cash
   - Bullet
+  - BackGround
   layers:
   - Default
   - TransparentFX

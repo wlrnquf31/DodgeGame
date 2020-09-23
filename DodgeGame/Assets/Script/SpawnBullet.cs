@@ -6,8 +6,6 @@ public class SpawnBullet : MonoBehaviour
 {
     public GameObject[] area;
 
-    public GameObject bullet;
-
     public GameObject player;
 
     private float spawnTime = 0.7f;
@@ -40,7 +38,8 @@ public class SpawnBullet : MonoBehaviour
         tmpPos.x = Random.Range(area[index].GetComponent<Collider2D>().bounds.min.x, area[index].GetComponent<Collider2D>().bounds.max.x);
         tmpPos.y = Random.Range(area[index].GetComponent<Collider2D>().bounds.min.y, area[index].GetComponent<Collider2D>().bounds.max.y);
         
-        GameObject newBullet = Instantiate(bullet, tmpPos, Quaternion.identity);
+        GameObject newBullet = ObjectPool.instance.GetObject().gameObject;
+        newBullet.transform.position = tmpPos;
         shotBullet(newBullet);
     }
 
