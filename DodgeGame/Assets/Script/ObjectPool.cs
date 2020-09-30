@@ -52,7 +52,7 @@ public class ObjectPool : MonoBehaviour
             if (instance.poolingObjectQueue.Count > 0)
             {
                 obj = instance.poolingObjectQueue.Dequeue();
-                if (obj.activeInHierarchy || obj == null)
+                if (obj == null || obj.activeInHierarchy )
                 {
                     continue;
                 }

@@ -14,6 +14,9 @@ public class SkinChange : MonoBehaviour
 
     private GameData data = new GameData();
 
+    [SerializeField]
+    private GameObject curSkinBoard;
+
     private void Start()
     {
         SkinInit();
@@ -39,8 +42,8 @@ public class SkinChange : MonoBehaviour
 
     private void ShowCharacterBoard()
     {
-        gameObject.transform.GetChild(1).GetChild(0).GetComponent<Image>().sprite = GameManager.instance.skin;
-        gameObject.transform.GetChild(1).GetChild(0).GetComponent<RectTransform>().sizeDelta = GameManager.instance.skin.rect.size;
+        curSkinBoard.GetComponent<Image>().sprite = GameManager.instance.skin;
+        curSkinBoard.GetComponent<RectTransform>().sizeDelta = GameManager.instance.skin.rect.size;
     }
 
     public void SkinInit()

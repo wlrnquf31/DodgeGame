@@ -39,7 +39,7 @@ public class Player : MonoBehaviour
     void Update()
     {
 #if UNITY_STANDLONE || UNITY_EDITOR || UNITY_ANDROID
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.Escape) && hp > 0)
         {
             //위치 바꿔야함
             GameManager.instance.GamePlayToggle();

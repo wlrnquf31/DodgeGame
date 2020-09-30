@@ -5,6 +5,13 @@ using UnityEngine.EventSystems;
 using UnityEngine.UI;
 using DataInfo;
 
+public enum EUpgrade
+{
+    Speed,
+    ShieldSpeed,
+    HpCureChance,
+}
+
 public class StatusUpgrade : MonoBehaviour
 {
     private GameData data = new GameData();
@@ -84,18 +91,33 @@ public class StatusUpgrade : MonoBehaviour
         {
             if (itemName.Equals("Upgrade"))
             {
-                data.cash -= itemPrice;
-                if(itemIndex.Equals(0))
+                float compareValue;
+                if (itemIndex.Equals((int)EUpgrade.Speed))
                 {
+                    compareValue = data.speed;
                     data.speed += 0.25f;
+                    if(!compareValue.Equals(data.speed))
+                    {
+                        data.cash -= itemPrice;
+                    }
                 }
-                else if(itemIndex.Equals(1))
+                else if (itemIndex.Equals((int)EUpgrade.ShieldSpeed))
                 {
+                    compareValue = data.shieldSpeed;
                     data.shieldSpeed += 5f;
+                    if (!compareValue.Equals(data.shieldSpeed))
+                    {
+                        data.cash -= itemPrice;
+                    }
                 }
                 else
                 {
+                    compareValue = data.hpCureChance;
                     data.hpCureChance += 0.02f;
+                    if (!compareValue.Equals(data.hpCureChance))
+                    {
+                        data.cash -= itemPrice;
+                    }
                 }
             }
             else
@@ -126,5 +148,23 @@ public class StatusUpgrade : MonoBehaviour
         {
             return true;
         }
+    }
+
+    //업그레이드 할려는 스텟이 Max를 찍었는지 체크하는 함수.
+    private bool CheckMaxStatus(int itemIndex)
+    {
+        if (itemIndex.Equals(EUpgrade.Speed))
+        {
+            data.speed += 0.25f;
+        }
+        else if (itemIndex.Equals(EUpgrade.ShieldSpeed))
+        {
+            data.shieldSpeed += 5f;
+        }
+        else if (itemIndex.Equals(EUpgrade.HpCureChance))
+        {
+            data.hpCureChance += 0.02f;
+        }
+        return false;
     }
 }

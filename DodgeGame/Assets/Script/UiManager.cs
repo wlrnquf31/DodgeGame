@@ -94,11 +94,7 @@ public class UiManager : MonoBehaviour
 
     public void OptionUiController()
     {
-        if(optionMenu != null)
-        {
-            optionMenu.SetActive(!optionMenu.activeInHierarchy);
-            optionMenu.GetComponentInChildren<Toggle>().isOn = DataManager.instance.Load().joystickIsLeft;
-        }
+        SceneFunctionLibrary.ShowOptionMenu();
     }
 
     public void CloseUiController()

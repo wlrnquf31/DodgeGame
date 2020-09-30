@@ -76,7 +76,7 @@ public class GameManager : MonoBehaviour
         }
         else if(scene.name.Equals("MainScene"))
         {
-            StartCoroutine("CheckEscape");
+            StartCoroutine(CheckEscape());
         }
     }
 

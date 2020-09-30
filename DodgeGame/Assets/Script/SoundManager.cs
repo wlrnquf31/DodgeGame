@@ -11,11 +11,8 @@ public class SoundManager : MonoBehaviour
 
     public static SoundManager instance;
 
-    private AudioSource effectAudio;
-    private AudioSource bgmAudio;
-
-    public Slider effectSlider;
-    public Slider bgmSlider;
+    public AudioSource effectAudio;
+    public AudioSource bgmAudio;
 
     public AudioClip hitShieldSound;
     public AudioClip hitCharacterSound;
@@ -36,43 +33,32 @@ public class SoundManager : MonoBehaviour
 
     private void Start()
     {
-        InitSlider();
-        InitEffect();
-        InitBgm();
+        InitSound();
     }
 
-    private void Update()
-    {
-        if(UiManager.instance.optionMenu.activeInHierarchy)
-        {
-            EffectSoundSlider();
-            BGMSoundSlider();
-        }
-    }
-
-    private void InitSlider()
+    public void InitSound()
     {
         data = DataManager.instance.Load();
 
-        effectSlider.value = data.effectVolume;
-        bgmSlider.value = data.bgmVolume;
+        InitEffect(data.effectVolume);
+        InitBgm(data.bgmVolume);
     }
 
-    private void InitBgm()
+    private void InitBgm(float bgmValue)
     {
         GameObject child = new GameObject("BGM");
         child.transform.SetParent(transform);
         bgmAudio = child.AddComponent<AudioSource>();
-        bgmAudio.volume = bgmSlider.value;
+        bgmAudio.volume = bgmValue;
         bgmAudio.loop = true;
         bgmAudio.clip = bgmSound;
         bgmAudio.Play();
     }
 
-    private void InitEffect()
+    private void InitEffect(float effectValue)
     {
         effectAudio = GetComponent<AudioSource>();
-        effectAudio.volume = effectSlider.value;
+        effectAudio.volume = effectValue;
     }
 
     public void BGMToggle()
@@ -86,24 +72,6 @@ public class SoundManager : MonoBehaviour
             bgmAudio.Play();
         }
         
-    }
-
-    public void EffectSoundSlider()
-    {
-        data = DataManager.instance.Load();
-
-        effectAudio.volume = effectSlider.value;
-        data.effectVolume = effectSlider.value;
-        DataManager.instance.Save(data);
-    }
-
-    public void BGMSoundSlider()
-    {
-        data = DataManager.instance.Load();
-
-        bgmAudio.volume = bgmSlider.value;
-        data.bgmVolume = bgmSlider.value;
-        DataManager.instance.Save(data);
     }
 
     public void PlayHitShieldSound()
